@@ -212,7 +212,7 @@ class DeepSeekChatClient(ChatClient):
     def __init__(self, name="deepseek-chat", model="deepseek-chat",
                  api_key_env="DEEPSEEK_API_KEY", price_in_per_m=0.27,
                  price_out_per_m=1.10, price_in_cached_per_m=0.07,
-                 timeout=60, temperature=0.0, max_tokens=900):
+                 timeout=60, temperature=0.0, max_tokens=500):
         super().__init__(name, price_in_per_m, price_out_per_m, price_in_cached_per_m)
         self.model = model
         self.api_key_env = api_key_env
