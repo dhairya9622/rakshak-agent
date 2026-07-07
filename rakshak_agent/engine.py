@@ -74,6 +74,16 @@ _HELP_RE = re.compile(
     r"\b(help|what can you (do|answer)|capabilit|how do i use|who are you|what do you know)\b")
 _GREET_RE = re.compile(r"^\s*(hi|hello|hey|yo|greetings)\b")
 
+# A follow-up that points back at the previous topic ("advise on this",
+# "what about it", "deal with them") — deliberately NOT matching "this week".
+_ANAPHORA_RE = re.compile(
+    r"\b(on|about|with|for|regarding) (this|that|it|them|those|these)\b|"
+    r"\b(this|that) one\b|\b(deal with|advise on|advice on|handle) (this|that|it|them)\b")
+
+
+def is_anaphoric(question: str) -> bool:
+    return bool(_ANAPHORA_RE.search(normalize.fold(question)))
+
 
 class Agent:
     def __init__(self, kb: KnowledgeBase, clock=None):
@@ -90,7 +100,7 @@ class Agent:
     # Public API
     # ------------------------------------------------------------------ #
 
-    def ask(self, question: str) -> Answer:
+    def ask(self, question: str, context: dict = None) -> Answer:
         q = (question or "").strip()
         if not q:
             return Answer("Please ask a question about the Rakshak reports.",
@@ -104,6 +114,9 @@ class Agent:
         terms = normalize.expand(raw_terms)
         modules = normalize.detect_modules(q)
         entity = self.index.find_entity(q)
+        # Resolve a follow-up ("advise on this") to the prior turn's topic.
+        if entity is None and is_anaphoric(q) and context and context.get("last_entity"):
+            entity = self.kb.entity_by_name.get(context["last_entity"])
         entity_name = entity["name"] if entity else None
         intent = intents.detect(q, has_entity=bool(entity))
 
@@ -114,7 +127,9 @@ class Agent:
 
         # Route by intent; each router returns an Answer or None (no confident hit).
         ans: Optional[Answer] = None
-        if intent == intents.ADVICE:
+        if intent == intents.ROLE:
+            ans = self._role_answer()
+        elif intent == intents.ADVICE:
             ans = self._answer_advice(q, folded, entity)
         elif intent == intents.COUNT:
             ans = self._answer_count(q, folded, modules)
@@ -143,7 +158,19 @@ class Agent:
         if ans.intent in (intents.EXPLAIN, intents.DEFINE) and not entity and not modules:
             if known == 0.0 or (ans.confidence < _MIN_SIGNAL and known < _MIN_KNOWN_FRACTION):
                 return self._out_of_scope(q)
+        # Tag the resolved topic so a frontend can echo it back as context
+        # for the next follow-up ("advise on this").
+        if entity_name and isinstance(ans.data, dict) and "topic" not in ans.data:
+            ans.data["topic"] = entity_name
         return ans
+
+    def _role_answer(self) -> Answer:
+        text = ("I'm a decision-aid over the five reports: I surface verdicts, figures, "
+                "deadlines and their statutory basis, each cited to report and page. "
+                "I don't take decisions, sign off, or represent you — the ruling and "
+                "filing rest with you and your CA.")
+        return Answer(text, intents.ROLE, in_scope=True, confidence=3.0,
+                      sources=[], data={"role": True})
 
     # ------------------------------------------------------------------ #
     # Intent routers
@@ -152,14 +179,24 @@ class Agent:
     def _answer_advice(self, q, folded, entity) -> Optional[Answer]:
         """Virtual-CA advisory routing (deterministic, real-time via the clock)."""
         adv = self.advisor
+        has_time_or_task = re.search(
+            r"prioriti|deadline|due|week|month|quarter|today|next|do\b|step|to-?do", folded)
         if entity:
             res = adv.item_advice(entity["name"])
         elif re.search(r"window|§?16\(4\)|37a|msmed|43b|ldc|clos", folded):
             res = adv.windows()
-        elif re.search(r"exposure|risk|liabilit|action|pay|reverse|owe", folded):
+        elif re.search(r"exposure|risk|liabilit|action|owe|reverse", folded):
             res = adv.action_items()
         elif re.search(r"notice|asmt|posture|drc|scrutiny", folded):
             res = adv.notice_posture()
+        elif is_anaphoric(q) or not has_time_or_task:
+            # a follow-up with no resolvable subject ("advise on this") -> ask,
+            # don't refuse and don't dump an unrelated chunk.
+            return Answer(
+                "About which item? Name a vendor, report, or para — e.g. "
+                "\"What should I do about Pinnacle Advisory?\"",
+                intents.ADVICE, in_scope=True, confidence=1.0, sources=[],
+                data={"clarify": True})
         else:  # prioritise / deadlines / what's next
             res = adv.deadlines()
         if not res:

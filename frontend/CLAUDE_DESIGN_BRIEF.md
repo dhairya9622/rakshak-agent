@@ -54,6 +54,13 @@ never call DeepSeek from the frontend.
 
 Fetch `/suggested` on load to populate the chips; POST `/ask` per user message.
 
+**Multi-turn:** the POST body is `{ question, context?: { last_entity } }`. Keep the
+last answer's `topic` in state and send it as `context.last_entity` on the next
+request, so a follow-up like *"advise on this"* resolves to the previous subject.
+If a follow-up can't be resolved, the agent replies with a one-line clarifier
+(intent `advice`, `data.clarify=true`) — render it as a normal assistant bubble,
+never as an error.
+
 ---
 
 ## 3. Real sample responses (use these to design the message bubbles)

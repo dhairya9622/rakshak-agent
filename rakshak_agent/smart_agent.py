@@ -47,6 +47,7 @@ class SmartAnswer:
     tokens_in: int = 0
     tokens_out: int = 0
     prompt_cache_hit: bool = False
+    topic: Optional[str] = None            # resolved subject; echo back as context
     sources: List[Dict] = field(default_factory=list)
     data: Dict[str, Any] = field(default_factory=dict)
 
@@ -103,42 +104,53 @@ class SmartAgent:
             tier=tier, difficulty=difficulty, in_scope=payload.get("in_scope", True),
             confidence=payload.get("confidence", 0.0), llm_used=False,
             cached=cached_kind, model=payload.get("model"),
-            cost_usd=0.0, sources=payload.get("sources", []), data=payload.get("data", {}))
+            cost_usd=0.0, topic=(payload.get("data") or {}).get("topic"),
+            sources=payload.get("sources", []), data=payload.get("data", {}))
 
     def _from_det(self, det, tier: str, difficulty: str) -> SmartAnswer:
         return SmartAnswer(
             text=det.text, intent=det.intent, tier=tier, difficulty=difficulty,
             in_scope=det.in_scope, confidence=det.confidence, llm_used=False,
-            cost_usd=0.0, sources=det.sources, data=det.data)
+            cost_usd=0.0, topic=(det.data or {}).get("topic"),
+            sources=det.sources, data=det.data)
 
     # ------------------------------------------------------------------ #
 
-    def ask(self, question: str) -> SmartAnswer:
+    def ask(self, question: str, context: dict = None) -> SmartAnswer:
+        """context (optional): {"last_entity": "<name>"} lets a follow-up like
+        'advise on this' resolve to the prior turn's topic. Context-dependent
+        follow-ups bypass the caches so answers never bleed across topics."""
         q = (question or "").strip()
         if not q:
-            ans = SmartAnswer("Please ask a question about the Rakshak reports.",
-                              "empty", TIER_DETERMINISTIC, classifier.EASY)
             self.meter.record(TIER_DETERMINISTIC)
-            return ans
+            return SmartAnswer("Please ask a question about the Rakshak reports.",
+                               "empty", TIER_DETERMINISTIC, classifier.EASY)
+
+        from .engine import is_anaphoric
+        use_cache = not (context and is_anaphoric(q))
 
         # 1) exact response cache
-        hit = self.response_cache.get(q)
-        if hit is not None:
-            self.meter.record(TIER_RESPONSE_CACHE)
-            return self._from_cache(hit, TIER_RESPONSE_CACHE, "response", classifier.EASY)
+        if use_cache:
+            hit = self.response_cache.get(q)
+            if hit is not None:
+                self.meter.record(TIER_RESPONSE_CACHE)
+                return self._from_cache(hit, TIER_RESPONSE_CACHE, "response", classifier.EASY)
 
         # deterministic agent (free) + routing signals
-        det = self.agent.ask(q)
+        det = self.agent.ask(q, context=context)
         in_domain = self._in_domain(q)
         modules = normalize.detect_modules(q)
         entity = self.index.find_entity(q)
+        if entity is None and context and context.get("last_entity") and is_anaphoric(q):
+            entity = self.index.kb.entity_by_name.get(context["last_entity"])
         topic = SemanticCache.topic_key(modules, entity["name"] if entity else None)
 
         # 2) semantic (paraphrase) cache, topic-guarded
-        sem = self.semantic_cache.get(q, topic)
-        if sem is not None:
-            self.meter.record(TIER_SEMANTIC_CACHE)
-            return self._from_cache(sem, TIER_SEMANTIC_CACHE, "semantic", classifier.EASY)
+        if use_cache:
+            sem = self.semantic_cache.get(q, topic)
+            if sem is not None:
+                self.meter.record(TIER_SEMANTIC_CACHE)
+                return self._from_cache(sem, TIER_SEMANTIC_CACHE, "semantic", classifier.EASY)
 
         # 3) classify difficulty
         diff = classifier.classify(q, det, in_domain)
@@ -153,9 +165,13 @@ class SmartAgent:
         else:
             ans = self._route_llm(q, det, diff)
 
+        if ans.topic is None and entity:
+            ans.topic = entity["name"]
+
         # 5) cache the result for future exact/paraphrase repeats
-        self.response_cache.put(q, ans._payload())
-        self.semantic_cache.put(q, topic, ans._payload())
+        if use_cache:
+            self.response_cache.put(q, ans._payload())
+            self.semantic_cache.put(q, topic, ans._payload())
         return ans
 
     def _route_llm(self, q, det, diff) -> SmartAnswer:

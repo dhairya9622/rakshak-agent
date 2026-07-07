@@ -36,7 +36,7 @@ _EXTRACTIVE_EASY = 4.0
 _IN_DOMAIN = 0.34
 
 _STRUCTURED = {intents.IDENTITY, intents.AMOUNT, intents.COUNT,
-               intents.LIST, intents.VERDICT, intents.ADVICE}
+               intents.LIST, intents.VERDICT, intents.ADVICE, intents.ROLE}
 
 # Cues that a question wants reasoning/synthesis the symbolic layer can't do
 # well on its own (comparisons, causal/hypothetical, cross-report narrative).
@@ -69,9 +69,9 @@ def classify(question: str, det_answer, in_domain: float) -> Difficulty:
     intent = det_answer.intent
     conf = det_answer.confidence
 
-    # The advisory engine IS the CA reasoning; never pay an LLM to rephrase it.
-    if intent == intents.ADVICE and conf >= 1.0:
-        return Difficulty(EASY, "deterministic advisory", in_domain, False)
+    # The advisory/role engine IS the CA reasoning; never pay an LLM to rephrase it.
+    if intent in (intents.ADVICE, intents.ROLE) and conf >= 1.0:
+        return Difficulty(EASY, "deterministic advisory/role", in_domain, False)
 
     # A reasoning/synthesis request is at least MEDIUM even if the agent found
     # something, because the offline answer is usually a raw extract.

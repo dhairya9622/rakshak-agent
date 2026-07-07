@@ -75,11 +75,12 @@ class Handler(BaseHTTPRequestHandler):
             n = int(self.headers.get("Content-Length", 0))
             data = json.loads(self.rfile.read(n) or b"{}")
             question = (data.get("question") or "").strip()
+            context = data.get("context")  # optional: {"last_entity": "..."}
         except Exception:
             return self._send(400, {"error": "invalid JSON body"})
         if not question:
             return self._send(400, {"error": "question is required"})
-        ans = AGENT.ask(question)
+        ans = AGENT.ask(question, context=context if isinstance(context, dict) else None)
         self._send(200, ans.to_dict())
 
     def log_message(self, *a):  # quiet

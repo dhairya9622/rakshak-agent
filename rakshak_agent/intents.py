@@ -16,6 +16,7 @@ from . import normalize
 
 # Intent constants
 ADVICE = "advice"         # virtual-CA: prioritise / windows / what-to-do / posture
+ROLE = "role"             # meta/boundary: "can you decide/sign/represent for me?"
 IDENTITY = "identity"     # report id, GSTIN, due date, status, run hash, version...
 AMOUNT = "amount"         # how much, value, total, liability, interest...
 VERDICT = "verdict"       # decision/outcome for an item or party
@@ -63,21 +64,39 @@ _EXPLAIN_RE = re.compile(r"\bwhy\b|\bhow\b|\bexplain\b|\btell me about\b|\breaso
                          r"\bwhat about\b|\bdescribe\b|\bwhat happens?\b")
 
 
+# NOTE: use whole words \b(advise|advice)\b so the vendor name "Pinnacle
+# Advisory" ('advisory') never trips the advice intent.
 _ADVICE_RE = re.compile(
     r"\bprioriti|what should i\b|what do i do\b|next step|action item|to-?do\b|"
     r"\bupcoming\b|\bdeadlines\b|\bwhat.s due\b|due next\b|"
+    r"\bwhat do you think i should\b|\bdeal with\b|\bwhat.?s next\b|"
+    r"\bdo (this |next )?(week|month|quarter|fortnight|today)\b|\bnext (week|month|quarter)\b|"
     r"\bmy (exposure|risk|liability|position)\b|total (exposure|risk|liability)\b|"
     r"\bclosing window|open window|window closing|windows?\b.*clos|"
-    r"\brecommend|\badvise\b|\bwhat to do\b|posture\b|where do i stand\b|"
+    r"\brecommend|\b(advise|advice)\b|\bwhat to do\b|posture\b|where do i stand\b|"
     r"\bnotice (position|posture|status|stand)\b")
+
+# Meta/boundary questions about the agent's authority (it advises, never rules).
+_ROLE_RE = re.compile(
+    r"\btake (a |the )?decisions?\b|\bdecide (for|on) me\b|\bon my behalf\b|"
+    r"\bmake (the |my )?decisions?\b|\bsign(-| )?off\b|\bsign it off\b|"
+    r"\brepresent me\b|\bact for me\b|\bfile for me\b|\bdecide for me\b|"
+    r"\bdo you (decide|rule|sign|file|represent)\b|"
+    r"\bcan you (decide|rule|sign|file|represent)\b|"
+    r"\bare you (a |an )?(ca|chartered accountant|lawyer|auditor|human|bot|ai|robot)\b")
 
 
 def detect(question: str, has_entity: bool) -> str:
     q = normalize.phrase_fold(question)
 
-    # Virtual-CA advisory cues take precedence (prioritise / windows / posture).
+    # Boundary/role questions first ("can you decide/sign for me?").
+    if _ROLE_RE.search(q):
+        return ROLE
+
+    # Virtual-CA advisory cues next (prioritise / windows / posture / follow-ups).
     if _ADVICE_RE.search(q) or (has_entity and re.search(
-            r"\bwhat (should|do) i do\b|\bwhat about\b|\bshould i (pay|reverse|contest|claim)\b", q)):
+            r"\bwhat (should|do) i do\b|\bwhat about\b|\bshould i (pay|reverse|contest|claim)\b|"
+            r"\bdeal with\b|\bwhat do you think\b", q)):
         return ADVICE
 
     # Order matters: most specific first.
