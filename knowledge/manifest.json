@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "generator": "rakshak preprocess.py",
+  "input_dir": "C:\\Users\\DHAIRYA\\Downloads\\files (2)",
+  "report_count": 5,
+  "chunk_count": 111,
+  "verdict_count": 25,
+  "fact_count": 367,
+  "entity_count": 10,
+  "reports": [
+    {
+      "report_id": "ANN-2425-FY-0012",
+      "source_file": "ANN_Meridian_2425FY_v0_9_5_SAMPLE.pdf",
+      "pages": 5,
+      "chunks": 27,
+      "facts": 108,
+      "verdicts_found": 6,
+      "verdicts_expected": 6,
+      "verdicts_ok": true
+    },
+    {
+      "report_id": "ITC-2627-MAY-0049",
+      "source_file": "ITC_Meridian_2627MAY_v0_9_6_SAMPLE.pdf",
+      "pages": 4,
+      "chunks": 23,
+      "facts": 81,
+      "verdicts_found": 7,
+      "verdicts_expected": 7,
+      "verdicts_ok": true
+    },
+    {
+      "report_id": "NTC-2425-JUL-0003",
+      "source_file": "NTC_Meridian_2425JUL_v0_1_0_SAMPLE.pdf",
+      "pages": 5,
+      "chunks": 30,
+      "facts": 68,
+      "verdicts_found": 4,
+      "verdicts_expected": 4,
+      "verdicts_ok": true
+    },
+    {
+      "report_id": "TDS-2627-Q1-0031",
+      "source_file": "TDS_Meridian_2627Q1_v0_9_3_SAMPLE.pdf",
+      "pages": 4,
+      "chunks": 25,
+      "facts": 91,
+      "verdicts_found": 8,
+      "verdicts_expected": 8,
+      "verdicts_ok": true
+    },
+    {
+      "report_id": "WIRE-MERIDIAN-0001",
+      "source_file": "WIRE_Meridian_TwoYears_v1_0_SAMPLE.pdf",
+      "pages": 1,
+      "chunks": 6,
+      "facts": 19,
+      "verdicts_found": 0,
+      "verdicts_expected": null,
+      "verdicts_ok": true
+    }
+  ]
+}

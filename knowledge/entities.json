@@ -1,0 +1,279 @@
+[
+  {
+    "name": "Rashmi Infotech Pvt Ltd",
+    "aliases": [
+      "Rashmi",
+      "Rashmi Infotech"
+    ],
+    "mentions": [
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "PASS",
+        "amount": 400000,
+        "snippet": "Transaction ledger — 7 decisions CLAIM FIX DEFER BLOCK REVERSE CA REVIEW TAXABLE · SUPPLIER / INVOICE GATE CHECKS VERDICT REASON & STATUTORY BASIS ITC Rashmi Infotech Pvt Ltd 4,00,000 New vendor · 2B ✓ CLAIM New supplier — first transaction"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "PASS",
+        "amount": 240000,
+        "snippet": "Deduction ledger — 8 decisions CLEAR FIX PAY NOW NIL–DOC / WATCH RECOVER CA REVIEW DEDUCTEE / PAYMENT SECTION BASE · TDS GATE CHECKS VERDICT REASON & STATUTORY BASIS Rashmi Infotech Pvt Ltd 393(1) 2,40,000 PAN operative ✓ CLEAR New deductee"
+      }
+    ]
+  },
+  {
+    "name": "Orbit Packaging Co",
+    "aliases": [
+      "Orbit",
+      "Orbit Packaging"
+    ],
+    "mentions": [
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "HOLD",
+        "amount": 150000,
+        "snippet": "Orbit Packaging Co 1,50,000 IMS Pending ✓ DEFER In IMS but goods not received by the 2B cut-off — 27XXXXX8842X1Z9 · OPC-1187 · 27,000 §16(2)(b) received ✗ §16(2)(b) unmet. Pended in IMS (permitted scenario): corrugated packaging · in transi"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "REPAIRED",
+        "amount": 400000,
+        "snippet": "Orbit Packaging Co 393(1) 4,00,000 2% base rate ✗ FIX Inoperative PAN = no PAN — §397(2) job-work · PAN inoperative since NS01→20% 80,000 @20% PAN inoperative ✗ higher rate (20%) applied over 2%; the 10 Apr e/w 194C 206AA 20% ✓ CA REVIEW ₹7"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST. Orbit Packaging — inoperative since 10 Apr Pinnacle Advisory — 3B unfiled · R.37A watch §397(2) 20% applied (e/w 206AA) · re-check at every payment and at ₹36,000 ITC reversal by 30 Nov 202"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "FILES. C1 · 07 May 2026 · BSR 0510342 96,400 ✓ NS01 · contracts (was 194C) (26 · incl. one 1,02,40,000 · 2,12,800 C2 · 09 Jun 2026 · 2d late → int ₹1,440 1,04,200 ✓ @20%, one nil-T) C3 · 07 Jul 2026 · BSR 0510342 98,600 ✓ NS02/03 · professi"
+      }
+    ]
+  },
+  {
+    "name": "Speedex Logistics",
+    "aliases": [
+      "Speedex"
+    ],
+    "mentions": [
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "REPAIRED",
+        "amount": 50000,
+        "snippet": "Speedex Logistics 50,000 2B* ✓ FIX Invoice-ref format mismatch only; auto-matched on 27XXXXX3390X1Z1 · PR: SPX- 9,000 IMS acc/deemed ✓ GSTIN + date + value. Repaired — claimable this 2241 / 2B: SPX/2241/26 · courier & Ref ≠ period. Vendor c"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "HOLD",
+        "amount": 380000,
+        "snippet": "Speedex Logistics 393(1) 3,80,000 ≤10 carriages decl. ✓ NIL — DOC Transporter declaration (≤10 carriages) + freight · goods-carriage NS01 nil nil T-flag PAN quoted ✓ PAN archived; reported in Form 140 with transporter e/w 194C(6) F140 T-fla"
+      }
+    ]
+  },
+  {
+    "name": "Annapurna Caterers",
+    "aliases": [
+      "Annapurna"
+    ],
+    "mentions": [
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "DENY",
+        "amount": 100000,
+        "snippet": "Annapurna Caterers 1,00,000 2B ✓ BLOCK Food & beverage for staff — blocked credit 27XXXXX1123X1Z0 · AC/0934 · 5,000 §17(5)(b)(i) ✗ irrespective of 2B presence. Mapped for 4(B)(1) staff catering & sweets · FY 26-27 treatment per Circular 170"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "HOLD",
+        "amount": 100000,
+        "snippet": "Annapurna Caterers 393(1) 1,00,000 TDS in order ✓ WATCH Deduction clean; flag is ageing — 61 days canteen services · Udyam-micro NS01 2,000 @2% MSMED §15 ✗ 61d unpaid past the MSMED §15 window. Pay · 61 days unpaid e/w 194C before 31 Mar 20"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST. Orbit Packaging — inoperative since 10 Apr Pinnacle Advisory — 3B unfiled · R.37A watch §397(2) 20% applied (e/w 206AA) · re-check at every payment and at ₹36,000 ITC reversal by 30 Nov 202"
+      }
+    ]
+  },
+  {
+    "name": "Vasudha Steel Traders",
+    "aliases": [
+      "Vasudha",
+      "Vasudha Steel"
+    ],
+    "mentions": [
+      {
+        "report_id": "ANN-2425-FY-0012",
+        "module": "ANN",
+        "page": 2,
+        "verdict_class": "HOLD",
+        "amount": 320000,
+        "snippet": "Prior-FY ITC availed 3,20,000 2B FY23-24 DISCLOSED FY 2023-24 credit claimed in FY 2024-25 3Bs within the this FY Claimed ≤ Nov'24 §16(4) window. Reported in new Table 6A1 (inside 6A) — FY 2023-24 spillover in · 41 excluded from current-yea"
+      },
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "PASS",
+        "amount": 120000,
+        "snippet": "Vasudha Steel Traders 1,20,000 2B (this month) ✓ CLAIM Prior-FY invoice surfacing in the May-26 2B — 27XXXXX2214X1Z6 · 21,600 IMS acc/deemed ✓ supplier reported late. Claim now, 167 days inside the spillover-in VST/2526/0891 · inv 28 Mar 20"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "PAY",
+        "amount": 600000,
+        "snippet": "Vasudha Steel Traders 393(1) 6,00,000 Buyer T/O >₹10Cr ✓ PAY NOW FY-aggregate gate fired on the crossing MS plates · FY buys crossed NS12 600 @0.1% Deducted ✗ date — 0.1% on the ₹6,00,000 excess ₹50L on 14 Jun e/w 194Q TDS.G16 fired ✓ never"
+      }
+    ]
+  },
+  {
+    "name": "Nimbus Electricals",
+    "aliases": [
+      "Nimbus"
+    ],
+    "mentions": [
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "PASS",
+        "amount": 80000,
+        "snippet": "Nimbus Electricals 80,000 Goods recd 06 May ✓ CLAIM Apr-26 deferral (goods in transit) now received and in 27XXXXX7719X1Z2 · 14,400 IMS acc/deemed ✓ 2B — claim releases this period. Deferral ledger matured NE/2627/0142 · deferred Apr-26 · I"
+      }
+    ]
+  },
+  {
+    "name": "Pinnacle Advisory LLP",
+    "aliases": [
+      "Pinnacle",
+      "Pinnacle Advisory"
+    ],
+    "mentions": [
+      {
+        "report_id": "ANN-2425-FY-0012",
+        "module": "ANN",
+        "page": 2,
+        "verdict_class": "PASS",
+        "amount": 180000,
+        "snippet": "Rule 37 reclaim — 1,80,000 7A rev ✓ RECONCILED Reversed under Rule 37 in Sep 2024, supplier paid, reclaimed Pinnacle Advisory LLP 6H reclaim ✓ Jan 2025. Reported in 6H only; from FY 2024-25, 8B auto- 180-day reversal Sep'24, 8B delinked pop"
+      },
+      {
+        "report_id": "ITC-2627-MAY-0049",
+        "module": "ITC",
+        "page": 2,
+        "verdict_class": "REVERSE",
+        "amount": 200000,
+        "snippet": "26-27 Pinnacle Advisory LLP 2,00,000 >180d unpaid ✗ REVERSE Availed Oct-25; supplier unpaid past 180 days (expiry 27XXXXX7765X1Z4 · PA-2025-118 36,000 Supplier 3B ✗ 12 Apr 2026) — Rule 37 reversal due in 4(B)(2), CA REVIEW · availed Oct-25 "
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST. Orbit Packaging — inoperative since 10 Apr Pinnacle Advisory — 3B unfiled · R.37A watch §397(2) 20% applied (e/w 206AA) · re-check at every payment and at ₹36,000 ITC reversal by 30 Nov 202"
+      },
+      {
+        "report_id": "WIRE-MERIDIAN-0001",
+        "module": "WIRE",
+        "page": 1,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "ledger — never by calling each other.. the agents talk SEP 2024 R.37 breach caught — Pinnacle Advisory LLP publishes watch.raised → vendor ITC agent Supplier unpaid past 180 days; ₹1,80,000 reversed in 4(B)(2), reclaimable. Run score · reve"
+      }
+    ]
+  },
+  {
+    "name": "Stratus Advisory Services",
+    "aliases": [
+      "Stratus",
+      "Stratus Advisory"
+    ],
+    "mentions": [
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "REPAIRED",
+        "amount": 200000,
+        "snippet": "Stratus Advisory Services 393(1) 2,00,000 Orig @2% tech ✗ FIX Misclassified NS03 2% → NS02 10%. PAN AAXXX8830X · advisory NS03→NS02 20,000 diff 16,000 §44AA prof ✓ Differential ₹16,000 recovered from the retainer · reclassified e/w 194J Dif"
+      }
+    ]
+  },
+  {
+    "name": "Horizon Estates",
+    "aliases": [
+      "Horizon"
+    ],
+    "mentions": [
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "HOLD",
+        "amount": 450000,
+        "snippet": "Horizon Estates 393(1) 4,50,000 §395 cert valid ✓ WATCH LDC 37.5% consumed; breach forecast office rent · §395 LDC @2% · NS05·LDC 9,000 @2% Cap 37.5% used ~Feb 2027. Beyond cap the rate reverts to cap ₹12,00,000 e/w 194I(b) TDS.G17 metered "
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST. Orbit Packaging — inoperative since 10 Apr Pinnacle Advisory — 3B unfiled · R.37A watch §397(2) 20% applied (e/w 206AA) · re-check at every payment and at ₹36,000 ITC reversal by 30 Nov 202"
+      }
+    ]
+  },
+  {
+    "name": "Zenith Fabricators",
+    "aliases": [
+      "Zenith"
+    ],
+    "mentions": [
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 2,
+        "verdict_class": "REVERSE",
+        "amount": 18000,
+        "snippet": "Zenith Fabricators 393(1) 18,000 Books ✓ AIS ✓ RECOVER Their 194Q-equivalent TDS on your sales customer · receivable-side NS12 mirror credit Own 26AS ✗ 04 Jul sits in books/AIS but not your 26AS/Form mirror e/w 194Q TDS.G18 fired ✓ 168 past"
+      },
+      {
+        "report_id": "TDS-2627-Q1-0031",
+        "module": "TDS",
+        "page": 3,
+        "verdict_class": null,
+        "amount": null,
+        "snippet": "FILES. C1 · 07 May 2026 · BSR 0510342 96,400 ✓ NS01 · contracts (was 194C) (26 · incl. one 1,02,40,000 · 2,12,800 C2 · 09 Jun 2026 · 2d late → int ₹1,440 1,04,200 ✓ @20%, one nil-T) C3 · 07 Jul 2026 · BSR 0510342 98,600 ✓ NS02/03 · professi"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+# RUNTIME dependencies for the hosted agent API (server.py): NONE.
+# The agent uses only the Python standard library, so this file is intentionally
+# empty. Hosts that run `pip install -r requirements.txt` install nothing heavy,
+# keeping cold starts fast.
+#
+# Preprocessing the PDFs (run once, locally) needs pdfplumber — see
+# requirements-preprocess.txt. It is NOT needed at runtime.

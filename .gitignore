@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets / local env (the DeepSeek key lives ONLY in host env vars, never here)
+.env
+.env.*
+
+# Local build / logs
+*.log
+distill/teacher_dataset.jsonl
+.vercel/
+.netlify/
+.DS_Store
+
+# NOTE: knowledge/ IS committed on purpose — the hosted agent loads it at runtime.

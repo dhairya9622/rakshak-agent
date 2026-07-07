@@ -1,0 +1,16 @@
+# One-click free deploy on Render (https://render.com).
+# In Render: New + -> Blueprint -> connect this repo. Then set DEEPSEEK_API_KEY
+# in the service's Environment tab (leave blank to run offline-only at $0).
+services:
+  - type: web
+    name: rakshak-agent
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"   # installs nothing (stdlib only)
+    startCommand: "python server.py"                    # binds 0.0.0.0:$PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.6"
+      - key: DEEPSEEK_API_KEY
+        sync: false        # set this yourself in the dashboard; never committed

@@ -1,0 +1,1001 @@
+[
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b0",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Rakshak Systems REPORT # ANN-2425-FY-0012",
+    "text": "Rakshak Systems REPORT # ANN-2425-FY-0012. Generated 11 Dec 2025 · 09:41 IST"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "GSTR-9 & 9C · ANNUAL APPROVAL",
+    "text": "GSTR-9 & 9C · ANNUAL APPROVAL. REPORT ◉ DETERMINISTIC · ZERO SAMPLE DATASET · ILLUSTRATIVE"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b2",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "RUNTIME AI FIGURES",
+    "text": "RUNTIME AI FIGURES. ANNUAL RETURN & RECONCILIATION · PRE-FILING REVIEW PACK RETURN GSTR-9 + GSTR-9C · FY 2024-25 Meridian Components Pvt Ltd FILING DUE 31 Dec 2025 REFERENCE Table 8A snapshot as downloaded · 01 GSTIN 27XXXXX1234X1Z5 · Maharashtra · Regular taxpayer Dec 2025 LINES 23,280 · 12 periods STATUS: FILING DUE IN 20 DAYS · AWAITING CA REVIEW RECONCILED REGIME 9C Part B self-certified (FY 2020-21 onward)"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b3",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "AGGREGATE ₹18.43 Cr → 9 & 9C both mandatory",
+    "text": "AGGREGATE ₹18.43 Cr → 9 & 9C both mandatory. TURNOVER APPLICABILITY 9 > ₹2 Cr (15/2025-CT) · 9C > ₹5 Cr"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b4",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "(R.80(3))",
+    "text": "(R.80(3)). FORM VERSION FY 2024-25 · Notif. 13/2025-CT dt. 17 Sep 2025 FOUR-WAY ANNUAL RECONCILIATION · AUTO-GENERATED WORKPAPER PACK Full run · 41.6s · invoice-level proof trail 01 · INGEST 02 · MATCH 03 · SPILLOVER 04 · VERDICT 05 · OUTPUT Books + 24 filed Books ↔ 1 ↔ 3B ↔ Cross-FY tracker This Report Filing Payloads returns 2B/8A FY23-24 in · FY24-25 out ✓ signed-off basis GSTR-9 JSON · 9C JSON · TB, 12×GSTR-1, 23,274 clear · 6 flagged DRC-03 payment 12×GSTR-3B ✓ worksheet"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b5",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Annual verdict — at a glance",
+    "text": "Annual verdict — at a glance. You decide 6 items. The engine reconciled 23,274. 0.03% reaches your desk. Turnover reconciled · ₹18,42,50,000 · 9C ITC reconciled · ₹1,62,50,000 · 9C 12F = 0 Cash payable · ₹42,320 incl. interest"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b6",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "5R = 0",
+    "text": "5R = 0. RECONCILED — CLEAN PAY NOW — DRC-03 ₹18.43 Cr ₹42,320 turnover · AFS → 9C Table 5 → GSTR-9 · un-reconciled 5R nil missed RCM ₹36,000 + interest u/s 50 ₹6,320 · cash only · discharged before filing"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b7",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "8D GAP — DISCLOSED SPILLOVER — TRACKED",
+    "text": "8D GAP — DISCLOSED SPILLOVER — TRACKED. ₹1,10,000 ₹8,00,000 ₹45,000 eligible, lapsed → 8E + ₹65,000 §17(5) ineligible → 8F ₹3,20,000 in (6A1) · ₹4,80,000 out (8C ↔ Table 13, tied)"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p1#b8",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "ANNUAL CLOCK — FY 2024-25 CLOSE-OUT",
+    "text": "ANNUAL CLOCK — FY 2024-25 CLOSE-OUT. 31 Mar 25 · FY ends 01 Dec · 8A pinned 31 Dec · 9 & 9C due 30 Nov 25 · §16(4) window closed 11 Dec · pack generated The annual return is not prepared — it is folded from twelve monthly ledgers. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ANN-2425-FY-0012 · pg 1/5"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b0",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "Reconciliation ledger — 6 decisions",
+    "text": "Reconciliation ledger — 6 decisions. RECONCILED PAY LAPSE DISCLOSED CA REVIEW"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "ITEM AMOUNT GATE CHECKS VERDICT REASON & STATUTORY BASIS",
+    "text": "ITEM AMOUNT GATE CHECKS VERDICT REASON & STATUTORY BASIS. Turnover gap — CN 2,50,000 Books ✓ RECONCILED Credit note against a Mar 2025 supply, issued and accounted timing GSTR-1 Δ Apr'25 in Apr 2025; reported in the Apr 2025 GSTR-1. Declared via Books vs GSTR-1 · Mar next-FY returns → GSTR-9 Table 11; 9C Table 5E adjustment 2025 supply closes the gap. No liability. §34 · GSTR-9 T.11 · 9C T.5E · proof: 72bc…331f RCM missed — legal 36,000 Self-inv ✗ PAY Reverse-charge on advocate fees (taxable value ₹2,00,000; fees 3B 3.1(d) ✗ supplier unregistered) — never self-invoiced u/s 31(3)(f) or"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b2",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "CA REVIEW",
+    "text": "CA REVIEW. Unregistered advocate · Nov §9(3) paid. Discharge ₹36,000 in cash via DRC-03 with interest u/s 2024 50 (₹6,320 · 356 days @ 18%) before filing — 9C Part V recommendation. Corresponding ITC claimable subject to eligibility, self-invoice generation and RCM tax payment; for"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b3",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "unregistered RCM supplies the §16(4) clock runs from the",
+    "text": "unregistered RCM supplies the §16(4) clock runs from the. self-invoice financial year. Delayed self-invoicing may attract penalty u/s 122 — exposure, if any, for the reviewing CA. §31(3)(f) · R.47A · §9(3) · Notif. 13/2017-CT(R) · Circ. 211/5/2024 · §50 · §122 · proof: 4067…8e66 Table 8D positive gap 1,10,000 8A ✓ 3B ✗ LAPSE In 2B, never availed. ₹65,000 is §17(5) ineligible → 8F, 2B credit never claimed > 30 Nov'25 correctly skipped. ₹45,000 was eligible but missed; §16(4) window closed 30 Nov 2025 → 8E. Disclosure only — no"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b4",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "credit-ledger debit.",
+    "text": "credit-ledger debit.. §16(4) · §17(5) · GSTR-9 T.8E/8F · proof: a35d…aabd Prior-FY ITC availed 3,20,000 2B FY23-24 DISCLOSED FY 2023-24 credit claimed in FY 2024-25 3Bs within the this FY Claimed ≤ Nov'24 §16(4) window. Reported in new Table 6A1 (inside 6A) — FY 2023-24 spillover in · 41 excluded from current-year Table 8 math, so no artificial 8D invoices, 9 suppliers (incl. mismatch. Vasudha Steel Traders — GSTR-9 T.6A1 · 9C T.12B · proof: 3d5b…bbf1 late-filer pattern persists into"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p2#b5",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "FY 26-27)",
+    "text": "FY 26-27). This-FY ITC availed 4,80,000 8A ✓ DISCLOSED Supplier-late invoices of FY 2024-25 claimed first time in Apr– next FY 3B Apr–Oct'25 Oct 2025 3Bs. Reported in 8C and Table 13, tied to the rupee FY 2024-25 spillover out 8C = T.13 (imports and RCM excluded from 8C per scope rules). §16(4) · GSTR-9 T.8C/T.13 · 9C T.12C · proof: 147b…d580 Rule 37 reclaim — 1,80,000 7A rev ✓ RECONCILED Reversed under Rule 37 in Sep 2024, supplier paid, reclaimed Pinnacle Advisory LLP 6H reclaim ✓ Jan 2025. Reported in 6H only; from FY 2024-25, 8B auto- 180-day reversal Sep'24, 8B delinked populates from 6B alone, so the reclaim no longer distorts 8D. repaid, reclaimed Jan'25 Same counterparty breaches 180 days again in FY 26-27 (REVERSE, ITC-2627-MAY-0049) — vendor score downgraded, repeat-offender flag. R.37 · 2nd proviso §16(2) · GSTR-9 T.6H · proof: 4f8e…f359 Annual totals 18,42,50,000 Adjusted turnover declared in GSTR-9 (9C T.5Q) · net ITC availed in FY ₹1,62,50,000 · single voluntary cash payment ₹42,320 · balance items disclosure-only. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ANN-2425-FY-0012 · pg 2/5"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p3#b0",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Annual shield — scrutiny & litigation cover",
+    "text": "Annual shield — scrutiny & litigation cover. PAID BEFORE IT'S A NOTICE Missed RCM self-surfaced and discharged via DRC-03 pre-filing: voluntary avoided ₹42,320 · pre-filing DRC-03 payment vs. an ASMT-10 / DRC-01 with penalty exposure after departmental annual-return scrutiny. 8C ↔ 13 TIED TO THE RUPEE Spillover ITC is the single largest source of GSTR-9 mismatch notices. Both −₹0 risk one cross-FY ledger disclosures generated from one cross-FY ledger — they cannot diverge. PINNED TO THE 8A SNAPSHOT Every 8-series figure reproducible against that download, invoice by invoice; audit-ready 01 Dec 2025 download re-runs re-pin if GSTN revises the view. LATE FEE — NIL, AND PROVABLE GSTR-9 Table 19 / GSTR-9C Table 17 = nil — both forms complete before 31 on time §47(2) · Circ. 246/03/2025 Dec 2025; no §47(2) late fee on either (levied on the complete annual return)."
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p3#b1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Filing payloads — exactly what files",
+    "text": "Filing payloads — exactly what files. PAYLOAD SET MEMO (OFF-RETURN) GSTR-9 payload · GSP-ready GSTR9-FY2425-MERIDIAN.json Spillover-out ₹4,80,000 sits in Apr–Oct 2025 3Bs — mirrors as 12B in"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p3#b2",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "next year's 9C; ledger carries the tag. DRC-03 ARN to the permanent",
+    "text": "next year's 9C; ledger carries the tag. DRC-03 ARN to the permanent. GSTR-9C payload · self-cert GSTR9C-FY2425-MERIDIAN.json file — first exhibit if FY 2024-25 draws scrutiny or audit u/s 65. 8A pin DRC-03 · payment worksheet · ₹42,320 of 01 Dec 2025 stored; re-run re-pins if GSTN revises the view. cash Control sequence DRC-03 → GSTR-9 → GSTR-9C Released only on sign-off · GSTN / GSP portal · forms are one-shot, no revision. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ANN-2425-FY-0012 · pg 3/5"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p4#b0",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "Drill-down — the ITC waterfall, tied out",
+    "text": "Drill-down — the ITC waterfall, tied out. the senior-review view: annual figure → month → invoice → proof GSTR-9 TABLE 8 GSTR-9C — BOOKS TIED TO THE RETURN 8A ITC per GSTR-2B (snapshot 01 Dec 2025) ₹1,68,40,000 5A Turnover per audited AFS (GSTIN) ₹18,45,00,000 8B Availed in FY — auto from 6B only (FY24-25 (₹1,62,50,000) 5E CNs issued after FY-end, in annual return (₹2,50,000) change) 5P/5Q Adjusted turnover = GSTR-9 declared ₹18,42,50,000 8C FY24-25 ITC availed Apr–Oct 2025 (₹4,80,000) 5R Un-reconciled turnover ₹0 8D Difference ₹1,10,000 12A ITC availed per AFS ₹1,64,10,000 8E Available but not availed — lapsed ₹45,000 12B Prior-FY ITC availed current FY ₹3,20,000 8F Available but ineligible — §17(5) ₹65,000 12C Current-FY ITC availed next FY (₹4,80,000) No import IGST this FY — 8G–8H1 (incl. new 8H1, import ITC availed next 12D/12E ITC availed = GSTR-9 claimed ₹1,62,50,000 FY) nil. 6J maintained at zero. 12F Un-reconciled ITC ₹0 Part V: recommended additional liability ₹36,000 (RCM) + interest ₹6,320 — discharged via DRC-03 before filing. Part B self-certified (post FY 2020- 21 regime)."
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p4#b1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "Annexure A — month-wise ITC drill-down · FY 2024-25",
+    "text": "Annexure A — month-wise ITC drill-down · FY 2024-25. MONTH 6B AVAILED 6A1 (PRIOR-FY) 6H RECLAIM 7A REVERSAL FLAG SOURCE RUN Apr'24 13,20,000 60,000 — — ITC-2425-APR-0018 May'24 12,80,000 45,000 — — ITC-2425-MAY-0019 Jun'24 13,60,000 50,000 — — ITC-2425-JUN-0020 Jul'24 13,10,000 40,000 — — ITC-2425-JUL-0021 Aug'24 14,00,000 35,000 — — ITC-2425-AUG-0022 Sep'24 13,40,000 30,000 — (1,80,000) R.37 reversal ₹1,80,000 ITC-2425-SEP-0023 Oct'24 13,90,000 35,000 — — ITC-2425-OCT-0024 Nov'24 12,70,000 25,000 — — RCM miss → DRC-03 ITC-2425-NOV-0025 Dec'24 13,50,000 — — — ITC-2425-DEC-0026 Jan'25 14,20,000 — 1,80,000 — R.37 reclaim (6H) ITC-2425-JAN-0027 Feb'25 13,30,000 — — — ITC-2425-FEB-0028 Mar'25 14,80,000 — — — CN ₹2,50,000 → T.11 ITC-2425-MAR-0029 FY 2024-25 1,62,50,000 3,20,000 1,80,000 (1,80,000) ties: 8B · 6A1 · 6H · 7A 12 signed runs Each row folds from the monthly approval report named in its Source-run column — same ledger, same proof hashes; the annual figure is the read-out of twelve signed monthly decisions, not a year-end reconstruction. Column ties asserted at compile: Σ6B = Table 8B ₹1,62,50,000 · Σ6A1 = spillover-in ₹3,20,000 · Σ6H = reclaim ₹1,80,000 · Σ7A = reversal ₹1,80,000. Spillover-out ₹4,80,000 sits in Apr–Oct 2025 3Bs (next FY) → reported via 8C / Table 13, not in this matrix. RCM cash column nil by design — the Nov'24 miss is the DRC-03 item. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ANN-2425-FY-0012 · pg 4/5"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b0",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "Prepared by · review & release",
+    "text": "Prepared by · review & release. ENGINE SentinelXOS — Rakshak Systems' deterministic"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "PRE-FILING REVIEW & APPROVAL",
+    "text": "PRE-FILING REVIEW & APPROVAL. compliance engine · Annual verdict v0.9.5 RUN HASH sha256:b66f…582a Chartered Accountant — Name"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b2",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "BASIS Deterministic gate ladder · 14 tie-out gates · 4-way",
+    "text": "BASIS Deterministic gate ladder · 14 tie-out gates · 4-way. match Membership No. ____________ Firm / FRN ____________ Signature ____________________ Date ___ / ___ / 2025 INPUTS TB · 12×GSTR-1 · 12×GSTR-3B · 8A snapshot · prior- year GSTR-9 · 12 monthly ITC verdict reports (ITC- ✓ Review complete — release payloads for filing"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b3",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "2425-APR-0018 → ITC-2425-MAR-0029)",
+    "text": "2425-APR-0018 → ITC-2425-MAR-0029). CONSUMES 12 signed monthly ITC runs (pinned by run hash) · 8A Authorised Signatory — Name & Designation snapshot · prior-year GSTR-9 Signature ____________________ Date ___ / ___ / 2025 PUBLISHES Annual table records · DRC-03 ARN → notice-response ✓ Approved — 9C Part B self-certification & filing"
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b4",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "annexure pool · spillover/late-filer patterns → vendor",
+    "text": "annexure pool · spillover/late-filer patterns → vendor. score GSTR-9C Part B is self-certified by the registered person (FY 2020-21 onward). The CA sign-off records a pre-filing review engagement, not a GENERATED 11 Dec 2025 · 09:41 IST statutory certification. Computed under statute at compile time; no model inference at runtime. Every proof hash is the SHA-256 digest of its canonical verdict record; the run hash covers the full data model, including the Annexure A matrix. Verdicts, tie-out gates, and proof trail persist for scrutiny."
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b5",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "Basis of preparation",
+    "text": "Basis of preparation. The annual return is compiled from the monthly verdict ledger: table-wise tie-outs, statutory citations, and a per-record proof trail reconciled to the 8A snapshot. Annexure A is the fold path — annual figure to month to invoice to proof. The decision log persists for scrutiny and notice response."
+  },
+  {
+    "chunk_id": "ANN-2425-FY-0012#p5#b6",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "SAME VERDICT LEDGER · RELATED MODULES",
+    "text": "SAME VERDICT LEDGER · RELATED MODULES. ITC verdict · 26AS / TDS recon · e-Invoice / IRN validation · Vendor compliance score · GSTR-9 annual prep · live · Notice / DRC response Rakshak Systems · SentinelXOS engine — annual return & reconciliation instrument. Decision aid; filing responsibility rests with the registered person / authorised signatory. CA review is an agreed pre-filing review engagement, not statutory certification. Sample dataset with illustrative figures; GSTIN and party details are fictitious. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ANN-2425-FY-0012 · pg 5/5"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b0",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Rakshak Systems REPORT # ITC-2627-MAY-0049",
+    "text": "Rakshak Systems REPORT # ITC-2627-MAY-0049. Generated 16 Jun 2026 · 09:14 IST"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b1",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "INPUT TAX CREDIT · APPROVAL",
+    "text": "INPUT TAX CREDIT · APPROVAL. REPORT ◉ DETERMINISTIC · ZERO SAMPLE DATASET · ILLUSTRATIVE"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b2",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "RUNTIME AI FIGURES",
+    "text": "RUNTIME AI FIGURES. PRE-FILING ITC REVIEW · MONTHLY REVIEW PACK RETURN GSTR-3B · May 2026 Meridian Components Pvt Ltd FILING DUE 20 Jun 2026 REFERENCE 2B snapshot as downloaded · 14 Jun GSTIN 27XXXXX1234X1Z5 · Maharashtra · Regular taxpayer 2026"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b3",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "LINES 1,940",
+    "text": "LINES 1,940. STATUS: FILING DUE IN 4 DAYS · AWAITING CA REVIEW RECONCILED REGIME IMS mandatory · Notif. 16/2025-CT"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b4",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "VINTAGES IN VIEW FY 2025-26 · FY 2026-27",
+    "text": "VINTAGES IN VIEW FY 2025-26 · FY 2026-27. TABLE 4 BASIS 4(A) auto from IMS-driven 2B · Circ. 170/02/2022 END-TO-END MONTHLY RECONCILIATION · AUTO-GENERATED WORKPAPER PACK Full run · 9.1s · invoice-level proof trail 01 · INGEST 02 · ACTION 03 · MATCH + 04 · VERDICT 05 · OUTPUT Purchase Register IMS Reconciliation VINTAGE This Report Filing Payload GSTR-2B · FY-tagged 1,940 lines ✓ 1,939 accepted/deemed · 1 signed-off basis GSTR-3B working payload pending 1,933 clear · 7 flagged"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b5",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Period verdict — at a glance",
+    "text": "Period verdict — at a glance. You decide 7 lines. The engine cleared 1,933. 0.36% reaches your desk. In-2B ₹13,72,000 — engine-cleared Held out ₹27,000 — IMS-Pending · never Net 4(C) ₹13,31,000 — after in-form ₹12,50,000 (1,933 lines) + desk ₹1,22,000 enters 2B or 4(A) reversals per Circ. 170/02/2022"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b6",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "CLAIM THIS PERIOD DEFERRED — PROTECTED",
+    "text": "CLAIM THIS PERIOD DEFERRED — PROTECTED. ₹1,17,000 ₹27,000 desk lines: current ₹81,000 (incl. one repaired ref) + spillover-in goods in transit · pended in IMS (permitted scenario) · out of 2B and ₹21,600 + matured ₹14,400 · engine-cleared ₹12,50,000 files 4(A) · reduces 2B-vs-3B excess-claim exposure · claims on receipt alongside, untouched"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b7",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "TO COST / REVERSE — 4(B) WATCH LANE",
+    "text": "TO COST / REVERSE — 4(B) WATCH LANE. ₹41,000 ₹36,000 blocked §17(5) ₹5,000 → 4(B)(1), to P&L, never netted silently · R.37 reclaim path open on supplier payment · R.37A: statutory reversal by 180-day reversal ₹36,000 → 4(B)(2), reclaimable on payment 30 Nov 2026 if supplier 3B unfiled by 30 Sep · §16(4) horizon on spillover — 167 days"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p1#b8",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "VINTAGE CLOCK — §16(4) WINDOW",
+    "text": "VINTAGE CLOCK — §16(4) WINDOW. 28 Mar 26 · invoice · ₹21,600 in May 26 · claim period Apr 26 · defer opens 30 Nov 26 · §16(4) closes · 167d Every credit carries its birthdate — the annual return compiles itself. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ITC-2627-MAY-0049 · pg 1/4"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p2#b0",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "Transaction ledger — 7 decisions",
+    "text": "Transaction ledger — 7 decisions. CLAIM FIX DEFER BLOCK REVERSE CA REVIEW"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p2#b1",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "TAXABLE ·",
+    "text": "TAXABLE ·. SUPPLIER / INVOICE GATE CHECKS VERDICT REASON & STATUTORY BASIS"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p2#b2",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "ITC",
+    "text": "ITC. Rashmi Infotech Pvt Ltd 4,00,000 New vendor · 2B ✓ CLAIM New supplier — first transaction, sampled to desk. All 27XXXXX5521X1Z3 · 72,000 IMS acc/deemed ✓ §16(2) conditions met; in 2B; IMS accepted/deemed. RIT/2627/0412 · laptops & IT ≤180d · Recd ✓ Full credit eligible. hardware · FY 26-27 §16(2)(aa) · R.36(4) · proof: 0b36…0930 Orbit Packaging Co 1,50,000 IMS Pending ✓ DEFER In IMS but goods not received by the 2B cut-off — 27XXXXX8842X1Z9 · OPC-1187 · 27,000 §16(2)(b) received ✗ §16(2)(b) unmet. Pended in IMS (permitted scenario): corrugated packaging · in transit · stays out of 2B and auto-populated 4(A); reduces 2B- FY 26-27 vs-3B excess-claim exposure. Eligible for CA review when reflected in GSTR-2B. §16(2)(b) · IMS · Notif. 16/2025-CT · R.88D · proof: 28ad…db8c Speedex Logistics 50,000 2B* ✓ FIX Invoice-ref format mismatch only; auto-matched on 27XXXXX3390X1Z1 · PR: SPX- 9,000 IMS acc/deemed ✓ GSTIN + date + value. Repaired — claimable this 2241 / 2B: SPX/2241/26 · courier & Ref ≠ period. Vendor correction queued. freight · FY 26-27 §16(2)(aa) met · R.36(4) · proof: b112…1ce0 Annapurna Caterers 1,00,000 2B ✓ BLOCK Food & beverage for staff — blocked credit 27XXXXX1123X1Z0 · AC/0934 · 5,000 §17(5)(b)(i) ✗ irrespective of 2B presence. Mapped for 4(B)(1) staff catering & sweets · FY 26-27 treatment per Circular 170/02/2022. Cost to P&L; no silent netting-off. §17(5)(b)(i) · Circ. 170/02/2022 · proof: da25…8d0c Vasudha Steel Traders 1,20,000 2B (this month) ✓ CLAIM Prior-FY invoice surfacing in the May-26 2B — 27XXXXX2214X1Z6 · 21,600 IMS acc/deemed ✓ supplier reported late. Claim now, 167 days inside the spillover-in VST/2526/0891 · inv 28 Mar 2026 · In §16(4) window ✓ §16(4) window; vintage-tagged for annual Table 6A1 MS plates · supplier filed late · FY so it never distorts current-year Table 8. 25-26 · §16(4) 167d left §16(4) · GSTR-9 T.6A1 → ANN-2627-FY draft · proof: 4c88…21e7 Nimbus Electricals 80,000 Goods recd 06 May ✓ CLAIM Apr-26 deferral (goods in transit) now received and in 27XXXXX7719X1Z2 · 14,400 IMS acc/deemed ✓ 2B — claim releases this period. Deferral ledger matured NE/2627/0142 · deferred Apr-26 · In 2B this month ✓ updated; continuity gate ties opening → closing. panel components · matured · FY §16(2)(b) met · proof: 9e10…77c4 26-27 Pinnacle Advisory LLP 2,00,000 >180d unpaid ✗ REVERSE Availed Oct-25; supplier unpaid past 180 days (expiry 27XXXXX7765X1Z4 · PA-2025-118 36,000 Supplier 3B ✗ 12 Apr 2026) — Rule 37 reversal due in 4(B)(2),"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p2#b3",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "CA REVIEW",
+    "text": "CA REVIEW. · availed Oct-25 3B · consultancy · R.37A watch reclaimable on payment. Supplier 3B unfiled — 180d unpaid · FY 25-26 prior claim R.37A watch: statutory reversal by 30 Nov 2026 if not filed by 30 Sep 2026. Interest u/s 50 utilization- dependent; flagged for CA determination. 2nd proviso §16(2) · R.37 · R.37A · §50 · proof: a820… 5ab8 Period totals 11,00,000 Desk lines only — engine-cleared ₹12,50,000 across 1,933 lines files alongside; 2B total 1,85,000 ₹13,72,000. Held-out deferral ₹27,000 (T2) · prior-claim reversal ₹36,000 (T7) · totals tie to the 7 rows above. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ITC-2627-MAY-0049 · pg 2/4"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p3#b0",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Cross-period shield — notice & litigation cover",
+    "text": "Cross-period shield — notice & litigation cover. SPILLOVER RESCUE Prior-FY credit found in this 2B and claimed 167 days before it lapsed — +₹21,600 kept captured at source vintage-tagged to Table 6A1 at birth. Spillover ITC is the single largest source of GSTR-9 mismatch notices. DEFERRED — PROTECTED ₹27,000 held back on purpose — goods not received → pended in IMS −₹0 risk pended, not dropped (permitted scenario), excluded from 2B and 4(A). Reduces 2B-vs-3B excess- claim exposure; eligible for CA review when reflected in GSTR-2B. REVERSED BEFORE IT'S A ₹36,000 — 180-day lapse caught on a prior-period claim; supplier's unfiled 3B avoided DEMAND adds the Rule 37A watch. Self-reverse in 4(B)(2) now vs. a DRC-01C demand self-cured with interest & penalty later; reclaimable on payment. AUDIT-READY Every verdict recorded with its basis — section cited, source + rule trail + run audit-ready recorder, not calculator hash stored, decision logged. The file defends itself in scrutiny. DEFERRAL LEDGER — CONTINUITY GATE opening ₹14,400 + new ₹27,000 − matured ₹14,400 = closing ₹27,000 ✓ tied"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p3#b1",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "GSTR-3B TABLE 4 — EXACTLY WHAT FILES FILING PAYLOAD",
+    "text": "GSTR-3B TABLE 4 — EXACTLY WHAT FILES FILING PAYLOAD. 4(A)(5) All other ITC — auto from 2B ₹13,72,000 GSTR-3B working payload 3B-MAY26-MERIDIAN.json = engine-cleared ₹12,50,000 + current ₹86,000 + spillover-in Released only on sign-off · 4(A) locked to IMS-driven 2B · reversals ₹21,600 + matured ₹14,400 recipient-entered. 4(B)(1) Reversed — permanent · §17(5) (₹5,000) 4(B)(2) Reversed — Rule 37 · reclaimable (₹36,000)"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p3#b2",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "MEMO (OFF-RETURN)",
+    "text": "MEMO (OFF-RETURN). 4(C) Net ITC available ₹13,31,000 Deferred ₹27,000 carried in IMS-Pending · blocked ₹5,000 to P&L, Gross-up from 2B with in-form reversal per Circular 170/02/2022. Vintage tags never netted silently · FY 25-26 items feed the annual 6A1 draft change no 3B figure — they pre-compile the annual 6A1 / 6B / 8C split. automatically. Deferred ₹27,000 never enters 2B or 4(A). ✓ 4(A) = 2B (₹13,72,000) · net credited ₹13,31,000 ANNUAL FOLD — CONTROL OVER THE YEAR, MONTHLY this run lands vintage-split into the running annual draft ANN-2627-FY: 6B- feed ₹13,50,400 · 6A1-feed +₹21,600 · 8C watch nil — Table 6/8 of next December compiles row by row, month by month. ✓ draft updated Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ITC-2627-MAY-0049 · pg 3/4"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b0",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "Prepared by · review & release",
+    "text": "Prepared by · review & release. ENGINE SentinelXOS — Rakshak Systems' deterministic"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b1",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "PRE-FILING REVIEW & APPROVAL",
+    "text": "PRE-FILING REVIEW & APPROVAL. compliance engine · ITC verdict v0.9.6 RUN HASH sha256:f31c…9a02 Chartered Accountant — Name"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b2",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "BASIS Deterministic gate ladder · 15 tie-out gates · vintage",
+    "text": "BASIS Deterministic gate ladder · 15 tie-out gates · vintage. ledger Membership No. ____________ Firm / FRN ____________ Signature ____________________ Date ___ / ___ / 2026 INPUTS Purchase register (1,940) · 2B snapshot 14 Jun · IMS action log · prior-period deferral ledger ✓ Review complete — release payload for filing CONSUMES Vendor master + vendor score (shared) · prior deferral/vintage ledgers · IMS action log Authorised Signatory — Name & Designation PUBLISHES Verdict records (hash-addressed) · 6B/6A1 feeds → Signature ____________________ Date ___ / ___ / 2026 ANN-2627-FY draft · R.37A + repeat-offender watches ✓ Approved for filing — EVC / DSC by authorised signatory"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b3",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "→ vendor score, TDS shield · reversal exposure →",
+    "text": "→ vendor score, TDS shield · reversal exposure →. notice-response evidence pool GSTR-3B is furnished by the registered person; the CA sign-off records a pre-filing review engagement. GENERATED 16 Jun 2026 · 09:14 IST Computed under statute at compile time; no model inference at runtime. Every proof hash is the SHA-256 digest of its canonical verdict record; the run hash covers the full data model, including the vintage and deferral ledgers. Verdicts, tie-"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b4",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "out gates, and proof trail persist for scrutiny.",
+    "text": "out gates, and proof trail persist for scrutiny.. NEW IN V0.9.6 — THREE GATES ITC.G13 · deferral continuity — opening + new − matured = closing, or halt ITC.G14 · §16(4) horizon — any open item <60d from window close → auto-escalate to desk ITC.G15 · vintage roll-up — Σ spillover-in = annual 6A1 draft · Σ current = 6B feed"
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b5",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "Basis of preparation",
+    "text": "Basis of preparation. Every verdict is computed under statute at compile time and recorded with its citation, vintage, and proof reference. Every credit carries its birthdate: the monthly decision log is the same ledger that compiles the annual return — 6A1, 6B, 8C and Table 13 fold from these tags. A recorder, not a calculator; the file defends itself in scrutiny."
+  },
+  {
+    "chunk_id": "ITC-2627-MAY-0049#p4#b6",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "SAME VERDICT LEDGER · RELATED MODULES",
+    "text": "SAME VERDICT LEDGER · RELATED MODULES. ITC verdict · live · 26AS / TDS recon · e-Invoice / IRN validation · Vendor compliance score · GSTR-9 annual prep · Notice / DRC response Rakshak Systems · SentinelXOS engine — pre-filing ITC review instrument. Decision aid; final responsibility rests with the signing Chartered Accountant. Sample dataset with illustrative figures; GSTIN and party details are fictitious. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures ITC-2627-MAY-0049 · pg 4/4"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b0",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Rakshak Systems REPORT # NTC-2425-JUL-0003",
+    "text": "Rakshak Systems REPORT # NTC-2425-JUL-0003. Generated 06 Jul 2026 · 10:22 IST"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "NOTICE · DRC · SCRUTINY —",
+    "text": "NOTICE · DRC · SCRUTINY —. RESPONSE PACK ◉ DETERMINISTIC · ZERO SAMPLE DATASET · ILLUSTRATIVE"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "RUNTIME AI FIGURES",
+    "text": "RUNTIME AI FIGURES. SCRUTINY OF RETURNS · NOTICE DECODE & DRAFT REPLY · FY NOTICE FORM GST ASMT-10 · §61 · Rule 99 2024-25 REPLY DUE 22 Jul 2026 (30d) · issued 22 Jun 2026 Meridian Components Pvt Ltd"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "REFERENCE DIN-20260622-MH-000318",
+    "text": "REFERENCE DIN-20260622-MH-000318. PARAS RAISED 4 discrepancies · ₹4,01,000 + interest GSTIN 27XXXXX1234X1Z5 · Maharashtra · Regular taxpayer REPLY FORM FORM GST ASMT-11 (portal) STATUS: REPLY DUE IN 16 DAYS · AWAITING CA REVIEW ISSUED BY State Tax Officer, MUM-VAT-C-812, Nodal-7 PERIOD FY 2024-25 · 12 return periods IF UNREPLIED §61(3) → DRC-01A / SCN u/s 74A · audit u/s 65 NOTICE-TO-REPLY PIPELINE · AUTO-GENERATED RESPONSE PACK Full run · 6.8s · every para answered from the existing verdict ledger 01 · DECODE 02 · MAP 03 · EVIDENCE 04 · VERDICT 05 · OUTPUT"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b4",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Notice parsed Para ↔ Ledger Proof pull This Report Reply Payload",
+    "text": "Notice parsed Para ↔ Ledger Proof pull This Report Reply Payload. 4 paras · sections & periods 4/4 matched to filed-return 7 records · hashes from ITC signed-off basis ASMT-11 draft · Annexures extracted ✓ verdict records & annual runs A–D · DRC-03 sheet Response verdict — at a Officer alleged ₹4,01,000 + interest. ₹3,65,000 explained · ₹42,320 already paid · ₹1,142 admitted via DRC-03. glance 2 of 4 paras — explained with evidence · no 1 para — already paid pre-filing · ARN 1 admission — ₹1,142 interest · pay-before- liability attached reply EXPLAINED — NO LIABILITY ALREADY PAID — PRE-FILING DRC-03 ₹3,65,000 ₹42,320 Para 1 spillover ITC ₹3,20,000 + Para 3 CN timing ₹45,000 · answered Para 2 RCM ₹36,000 + interest ₹6,320 · discharged 10 Dec 2025, from Table 6A1 / Table 11 disclosures already on record before GSTR-9/9C filing · ARN & 9C Part V disclosure attached"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b5",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "ADMIT & PAY — DRC-03 CONTESTED / ESCALATED",
+    "text": "ADMIT & PAY — DRC-03 CONTESTED / ESCALATED. ₹1,142 ₹0 Para 4 · interest u/s 50 on 3-day delayed Apr'24 3B cash liability · pay No para requires adjudication posture · nothing routed to counsel · in cash before ASMT-11 submission escalation lane empty this notice"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p1#b6",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "DEADLINE GATE — §61 CLOCK",
+    "text": "DEADLINE GATE — §61 CLOCK. 22 Jun · ASMT-10 issued 22 Jul · ASMT-11 due · §61(3) beyond 06 Jul · pack generated · 16d left The reply is not drafted — it is retrieved. Every para resolves to a verdict recorded when the return was filed. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures NTC-2425-JUL-0003 · pg 1/5"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b0",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "Para-wise response ledger — 4 decisions",
+    "text": "Para-wise response ledger — 4 decisions. EXPLAIN PAID ADMIT + PAY CONTEST CA REVIEW PARA / ALLEGATION AMOUNT GATE CHECKS VERDICT RESPONSE & STATUTORY BASIS Para 1 — ITC availed not 3,20,000 FY23-24 2B ✓ EXPLAIN Credit pertains to FY 2023-24 invoices reflected in FY in FY 2024-25 GSTR-2B ≤ §16(4) window ✓ 2023-24 GSTR-2B and availed in FY 2024-25 3Bs ITC alleged excess 3B claims exceed 2B of the T.6A1 disclosed ✓ within the §16(4) window — spillover-in, disclosed in period by ₹3,20,000 · Apr–Nov GSTR-9 Table 6A1 and 9C Table 12B. Period-wise 2B"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "2024 comparison is the wrong frame; invoice-level annexure",
+    "text": "2024 comparison is the wrong frame; invoice-level annexure. maps each claim to its source 2B."
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "§16(4) · GSTR-9 T.6A1 · 9C T.12B · Annexure A · proof:",
+    "text": "§16(4) · GSTR-9 T.6A1 · 9C T.12B · Annexure A · proof:. 3d5b…bbf1 Para 2 — RCM not 36,000 DRC-03 10 Dec 25 ✓ PAID Discrepancy is real but already self-surfaced and discharged, legal fees Int. u/s 50 paid ✓ discharged: ₹36,000 tax + ₹6,320 interest paid in cash + int. 6,320 3.1(d) nil in Nov'24 3B against 9C Part V ✓ via DRC-03 dated 10 Dec 2025 (ARN advocate invoice · §9(3) AD2712250098765), before GSTR-9/9C filing, and recommended in 9C Part V. Voluntary payment predates the notice — §73(5)/74A(8) posture; no further liability. Payment challan and 9C extract annexed."
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "§9(3) · §31(3)(f) · R.47A · §50 · Circ. 211/5/2024 · Annexure",
+    "text": "§9(3) · §31(3)(f) · R.47A · §50 · Circ. 211/5/2024 · Annexure. B · proof: 4067…8e66 Para 3 — GSTR-1 vs 3B 45,000 CN §34 Apr'25 ✓ EXPLAIN Gap is a credit-note timing artefact: CN against a Mar turnover gap, Mar'25 tax alleged short GSTR-9 T.11 ✓ 2025 supply was issued and reported in the Apr 2025 Outward value mismatch 9C T.5E = 0 gap ✓ GSTR-1, declared through next-FY returns and folded ₹2,50,000 · tax effect ₹45,000 into GSTR-9 Table 11; 9C Table 5E closes the reconciliation to zero. No short payment of tax at any"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b4",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "point; ledger walk annexed rupee-to-rupee.",
+    "text": "point; ledger walk annexed rupee-to-rupee.. §34 · GSTR-9 T.11 · 9C T.5E · Annexure C · proof: 72bc… 331f Para 4 — Interest on 1,142 Filed +3d ✗ ADMIT + PAY Delay admitted. Interest computed on the cash-paid delayed Apr'24 3B Cash portion only ✓ liability only (₹7,72,000 × 18% × 3/365 = ₹1,142) per interest u/s 50 Return filed 23 May 2024 vs due ₹7,72,000 base ✓ CA REVIEW proviso to §50(1) — not on gross liability as the notice 20 May 2024 · 3 days implies. Pay via DRC-03 before submitting ASMT-11;"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b5",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "worksheet at Annexure D. Admission requires explicit",
+    "text": "worksheet at Annexure D. Admission requires explicit. CA approval — gate NTC.G3 holds the payload until ticked."
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p2#b6",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "§50(1) proviso · R.88B · Annexure D · proof: 9c41…e22a",
+    "text": "§50(1) proviso · R.88B · Annexure D · proof: 9c41…e22a. Notice totals 4,01,000 Explained ₹3,65,000 (P1+P3) · already paid ₹42,320 (P2) · admitted ₹1,142 (P4) · contested ₹0 — alleged + int. every para closes to a verdict, no residue. ANSWERED, NOT ARGUED No para required fresh analysis. Paras 1–3 resolve to verdict records created 4/4 mapped retrieved from ledger when the underlying returns were prepared — same proof hashes, same citations. The response pack is the read-out of decisions already on file. PAID BEFORE IT WAS ASKED The RCM miss was self-surfaced during annual-return preparation and avoided ₹42,320 · pre-notice discharged seven months before this notice issued. The reply attaches the ARN — the strongest posture available under §73(5)/74A: voluntary payment, no suppression. ADMISSION IS GATED The engine never concedes on its own. The single admitted item is priced to locked ₹1,142 · CA-approved only the statute (cash-portion interest, not gross), routed through DRC-03, and blocked from the reply payload until the reviewing CA signs gate NTC.G3. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures NTC-2425-JUL-0003 · pg 2/5"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p3#b0",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Draft reply — FORM GST ASMT-11",
+    "text": "Draft reply — FORM GST ASMT-11. Portal-ready text · released only on sign-off · figures locked to ledger REPLY TO NOTICE U/S 61 · RULE 99(2) · REF DIN-20260622-MH-000318 DT. 22 JUN ASMT11-FY2425-"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p3#b1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "2026 MERIDIAN.JSON",
+    "text": "2026 MERIDIAN.JSON. The registered person, M/s Meridian Components Pvt Ltd (GSTIN 27XXXXX1234X1Z5), submits this explanation to the discrepancies communicated in FORM GST ASMT-10 for FY 2024-25, para-wise, with documentary evidence annexed. Para 1 — ITC of ₹3,20,000 stated to be availed in excess of GSTR-2B The credit pertains to invoices of FY 2023-24 which appeared in the GSTR-2B of FY 2023-24 but were availed in the GSTR-3Bs of FY 2024-25, within the time limit under section 16(4). The amount stands disclosed in Table 6A1 of GSTR-9 and Table 12B of GSTR-9C for FY 2024-25. Annexure A furnishes the invoice-wise mapping of each availment to its source GSTR-2B period. There is no excess availment; the comparison of a single year's 3B with the same year's 2B does not account for statutorily permitted cross-year availment. Para 2 — Reverse-charge liability of ₹36,000 on advocate services, Nov 2024 The liability is admitted and stands discharged. The omission was identified during preparation of the annual return and paid in cash — tax ₹36,000 and interest ₹6,320 under section 50 — vide DRC-03 ARN AD2712250098765 dated 10 Dec 2025, prior to filing GSTR-9/9C, and reported in Part V of GSTR-9C. Challan, ARN acknowledgement, and the 9C extract are at Annexure B. The payment being voluntary and prior to issuance of this notice, no further proceedings are warranted on this issue. Para 3 — Difference of ₹2,50,000 between GSTR-1 and GSTR-3B, Mar 2025 The difference arises from a credit note under section 34 against a March 2025 supply, issued and reported in the April 2025 GSTR-1. The adjustment is declared through the returns of the subsequent period and reflected in Table 11 of GSTR-9; Table 5E of GSTR-9C reconciles the audited turnover to the declared turnover with nil un-reconciled balance (Table 5R = 0). The rupee-wise walk is at Annexure C. No tax was short paid. Para 4 — Interest on delayed filing of GSTR-3B for Apr 2024 The delay of three days is admitted. Interest is computed under the proviso to section 50(1) read with Rule 88B on the portion of tax discharged through the electronic cash ledger (₹7,72,000 × 18% × 3/365 = ₹1,142) and has been deposited vide DRC-03 dated ___ Jul 2026 (worksheet at Annexure D). The registered person prays the computation on the cash portion be accepted in terms of the said proviso. In view of the above, it is respectfully submitted that the explanations be found acceptable under section 61(2) and the proceedings be dropped. The registered person remains available for any further information. Enclosures: Annexures A–D · Place: Mumbai · Date: ___ Jul 2026 · For Meridian Components Pvt Ltd, Authorised Signatory"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p3#b2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "REPLY PAYLOAD — EXACTLY WHAT FILES MEMO (OFF-REPLY)",
+    "text": "REPLY PAYLOAD — EXACTLY WHAT FILES MEMO (OFF-REPLY). ASMT-11 reply · portal text + attachments ASMT11-FY2425.json Para 2 precedent — keep DRC-03 ARN in the permanent file; reusable if FY 2024-25 is selected for audit u/s 65. Para 1 pattern — DRC-03 · Para 4 interest · cash ₹1,142 supplier-late invoices recur; vendor compliance score flags the two Annexure bundle · A–D, hash-stamped PDF 4 files counterparties driving spillover. If officer proceeds despite reply —"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p3#b3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "next artefact is DRC-01A Part B response; same ledger, same",
+    "text": "next artefact is DRC-01A Part B response; same ledger, same. Control sequence DRC-03 → ASMT-11 annexures, escalation lane opens. Released only on CA sign-off · figures locked to the verdict ledger · reply is one-shot on the portal, no revision. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures NTC-2425-JUL-0003 · pg 3/5"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p4#b0",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "Annexure index — evidence trail",
+    "text": "Annexure index — evidence trail. Every attachment is a fold from a prior signed run · nothing assembled by hand"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p4#b1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "ANNEX CONTENTS SOURCE RUN TIES TO PROOF",
+    "text": "ANNEX CONTENTS SOURCE RUN TIES TO PROOF. A Invoice-wise spillover-in map — 41 Annual run · ANN-2425-FY-0012 T.6A1 = ₹3,20,000 3d5b…bbf1 invoices, FY 2023-24 2B period → FY · Annexure-A matrix, 6A1 column 9C 12B tie ✓ per-line hashes ✓ 2024-25 3B availment month → §16(4) window check per line B DRC-03 challan + ARN Annual run · pay-now verdict, ₹36,000 + ₹6,320 4067…8e66 AD2712250098765 · CIN · 9C Part V DRC-03 payment worksheet cash ledger ✓ ARN attached ✓ extract · self-invoice u/s 31(3)(f) raised under R.47A C CN ledger walk — Mar'25 supply → Annual run · reconciled verdict, 5R = 0 ✓ 72bc…331f"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p4#b2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "Apr'25 CN → Apr'25 GSTR-1 → turnover gate T.11 = ₹2,50,000 4-hop tie ✓",
+    "text": "Apr'25 CN → Apr'25 GSTR-1 → turnover gate T.11 = ₹2,50,000 4-hop tie ✓. GSTR-9 T.11 → 9C 5E, rupee-tied at each hop D Interest worksheet — Apr'24 3B cash- This run · NTC-2425-JUL-0003 · §50(1) proviso 9c41…e22a ledger debits, day count, R.88B new record cash base ✓ calc replayable ✓ computation, DRC-03 draft ₹1,142"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p4#b3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "DRC-03 WORKSHEET — PARA 4 RESPONSE GATES — THIS RUN",
+    "text": "DRC-03 WORKSHEET — PARA 4 RESPONSE GATES — THIS RUN. Cash-paid liability · Apr'24 3B ₹7,72,000 NTC.G1 · deadline — reply date < due date − 3d buffer, or halt & escalate to desk Rate u/s 50(1) 18% p.a. NTC.G2 · coverage — every notice para maps to exactly one Delay · 21 May – 23 May 2024 3 days verdict; unmapped para blocks the payload Interest = 7,72,000 × 18% × 3/365 ₹1,142 NTC.G3 · admission lock — any ADMIT/PAY line requires explicit CA approval before it enters ASMT-11 text DRC-03 · cause: \"audit/scrutiny — interest\" · cash ₹1,142 only NTC.G4 · figure tie-out — every rupee in the reply must"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p4#b4",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 4,
+    "page_role": "Drill-down / annexure",
+    "section": "equal a filed-return or ledger figure; free-text numbers rejected",
+    "text": "equal a filed-return or ledger figure; free-text numbers rejected. ITC-credit debit not permitted for interest · pay before ASMT-11 submission NTC.G5 · citation integrity — each para carries ≥1 and quote ARN in the reply. statutory basis + ≥1 proof hash, or the para renders as CA-REVIEW A notice is a query against the ledger. If the ledger was built right, the response is a SELECT, not a scramble. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures NTC-2425-JUL-0003 · pg 4/5"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b0",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "Prepared by · review & release",
+    "text": "Prepared by · review & release. ENGINE SentinelXOS — Rakshak Systems' deterministic"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "PRE-SUBMISSION REVIEW & RELEASE",
+    "text": "PRE-SUBMISSION REVIEW & RELEASE. compliance engine · Notice response v0.1.0 RUN HASH sha256:7d2e…c410 Chartered Accountant — Name"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "BASIS Deterministic gate ladder · 5 response gates ·",
+    "text": "BASIS Deterministic gate ladder · 5 response gates ·. para↔ledger map Membership No. ____________ Firm / FRN ____________ Signature ____________________ Date ___ / ___ / 2026"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "INPUTS ASMT-10 (parsed) · monthly ITC verdict ledger · annual",
+    "text": "INPUTS ASMT-10 (parsed) · monthly ITC verdict ledger · annual. run ANN-2425-FY-0012 · cash-ledger extract · DRC-03 ☑ Review complete — release ASMT-11 payload ARN register ☑ NTC.G3 admission approved — Para 4 · ₹1,142 via DRC-03 CONSUMES ITC + annual verdict records by proof hash (pinned to source run hashes) · DRC-03 ARN register · cash Authorised Signatory — Name & Designation"
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b4",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "ledger",
+    "text": "ledger. Signature ____________________ Date ___ / ___ / 2026 PUBLISHES Litigation file + para map (persist) · precedent records ☑ Approved — DRC-03 payment & ASMT-11 submission (EVC/DSC) → permanent file · escalation.open event if officer proceeds ASMT-11 is furnished by the registered person. The CA sign-off records an GENERATED 06 Jul 2026 · 10:22 IST agreed pre-submission review engagement, not representation before the proper officer. Computed under statute at compile time; no model inference at runtime. Notice text is parsed and mapped at compile time; every reply figure is a reference into the verdict ledger, never a free computation. Proof hashes are SHA-256 digests of canonical verdict records; the run hash covers the para map, annexure bundle, and DRC-03 worksheet. The full pack persists for any subsequent DRC-01A, SCN, or audit u/s 65 on the same period."
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b5",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "Basis of preparation",
+    "text": "Basis of preparation. The response pack is compiled from the same verdict ledger that produced the monthly ITC reports and the annual GSTR-9/9C pack for this GSTIN. Each notice para is mapped to its originating verdict record; explanations, citations, and annexures are folded from those records with their original proof hashes intact. Where the notice raises an item with no ledger antecedent (Para 4), a new record is created in this run and gated for CA approval before any admission enters the reply. The pack, the parsed notice, and the para map persist as the litigation file for this period."
+  },
+  {
+    "chunk_id": "NTC-2425-JUL-0003#p5#b6",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "page": 5,
+    "page_role": "Provenance & sign-off",
+    "section": "SAME VERDICT LEDGER · RELATED MODULES",
+    "text": "SAME VERDICT LEDGER · RELATED MODULES. ITC verdict · 26AS / TDS recon · e-Invoice / IRN validation · Vendor compliance score · GSTR-9 annual prep · Notice / DRC response · live Rakshak Systems · SentinelXOS engine — notice & scrutiny response instrument. Decision aid; the reply is furnished by the registered person and reviewed by the engaged Chartered Accountant. Nothing herein constitutes legal representation. Sample dataset with illustrative figures; notice reference, DIN, GSTIN and party details are fictitious. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures NTC-2425-JUL-0003 · pg 5/5"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b0",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Rakshak Systems REPORT # TDS-2627-Q1-0031",
+    "text": "Rakshak Systems REPORT # TDS-2627-Q1-0031. Generated 06 Jul 2026 · 09:26 IST"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b1",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "TDS · 26AS · VENDOR RISK — APPROVAL",
+    "text": "TDS · 26AS · VENDOR RISK — APPROVAL. REPORT ◉ DETERMINISTIC · ZERO SAMPLE DATASET · ILLUSTRATIVE"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b2",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "RUNTIME AI FIGURES",
+    "text": "RUNTIME AI FIGURES. PRE-FILING TDS REVIEW · QUARTERLY REVIEW PACK · FORM 140 STATEMENT Form 140 (erstwhile 26Q) · Q1 · Tax"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b3",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "(ERSTWHILE 26Q)",
+    "text": "(ERSTWHILE 26Q). Year 2026-27 (Apr–Jun) Meridian Components Pvt Ltd FILING DUE 31 Jul 2026 · Form 131 (erstwhile 16A) due 15 Aug 2026 TAN MUMXXXX21F · PAN AAXXX1234X · Maharashtra · Deductor — REFERENCE OLTAS CSI as downloaded · 05 Jul · non-salary own 26AS/AIS · 04 Jul LINES SCANNED 2,140 payment lines · 96 vendors · 42"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b4",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "STATUS: AWAITING CA REVIEW",
+    "text": "STATUS: AWAITING CA REVIEW. deductees RATE MATRIX Income-tax Act 2025 · §393 table + nature codes, w.e.f. 01 Apr 2026 · FA- 2025 thresholds carried · §206AB retired SECTIONS IN §393(1) — NS01 · NS02/03 · NS05 · VIEW NS12 · NS04 (erstwhile 194C · 194J · 194I(b) · 194Q · 194H) BOTH-DIRECTION QUARTERLY RECONCILIATION · AUTO-GENERATED WORKPAPER PACK Full run · 7.4s · line-level proof trail 01 · INGEST 02 · SECTION & RATE 03 · MATCH 04 · VERDICT 05 · OUTPUT Payments + Vendor Effective-dated Books ↔ Challan ↔ This Report Form 140 FVU + master matrix CSI signed-off basis Form 131 2,140 lines ✓ · 96 vendors · 1961→2025 crosswalk · 3/3 challans tied to the FVU-validated file · 42"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b5",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "3 challans thresholds · PAN gate · rupee certificates queued",
+    "text": "3 challans thresholds · PAN gate · rupee certificates queued. LDC · 2,132 clear · 8 flagged"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b6",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Quarterly verdict — at a glance",
+    "text": "Quarterly verdict — at a glance. You decide 8 lines. The engine cleared 2,132. 0.37% reaches your desk. Total TDS ₹3,15,800 · 42 deductees · 5 Deposited ₹2,99,200 · 3 challans, CSI-tied Payable pre-filing ₹18,532 · tax ₹16,600 + sections interest ₹1,932"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b7",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "DEPOSITED — TIED PAY BEFORE FILING — CHALLAN-READY",
+    "text": "DEPOSITED — TIED PAY BEFORE FILING — CHALLAN-READY. ₹2,99,200 ₹18,532 3 challans ↔ CSI, matched to the rupee · Σ = Form 140 challan sheet · tax ₹16,600 — NS02/03 differential ₹16,000 (erstwhile 194J) + NS12 short-payment class closed at source goods ₹600 (erstwhile 194Q) — + interest u/s 398 ₹1,932 (erstwhile 201(1A)) · computed to the rupee, month-or-part YOUR 26AS / FORM 168 — CREDIT AT RISK 2025 ACT §35(B) DISALLOWANCE — PRE-EMPTED ₹18,000 ₹1,80,000 customer-deducted TDS in books/AIS, absent from your 26AS/Form a ₹600 miss: NS12 goods TDS not deducted → 30% of ₹6,00,000 168 — their default, your cash · credit at ITR risk (2026 Rules, e/w purchases disallowed u/s 35(b), IT Act 2025 (erstwhile §40(a)(ia)) — R.37BA) · recovery pack drafted unless deposited before the return-filing due date. It was: a ₹1,80,000 exposure resolved by a ₹600 deposit."
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p1#b8",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Q1 FY 2026-27 — DEPOSIT & FILING CLOCK",
+    "text": "Q1 FY 2026-27 — DEPOSIT & FILING CLOCK. 07 May · C1 ✓ 07 Jul · C3 ✓ 15 Aug · Form 131 09 Jun · C2 · 2d = 2 months = 3% · caught 31 Jul · Form 140 due · 25d Every deduction carries its section, its challan, and its mirror in someone else's 26AS. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures TDS-2627-Q1-0031 · pg 1/4"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p2#b0",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 2,
+    "page_role": "Decision ledger",
+    "section": "Deduction ledger — 8 decisions",
+    "text": "Deduction ledger — 8 decisions. CLEAR FIX PAY NOW NIL–DOC / WATCH RECOVER CA REVIEW DEDUCTEE / PAYMENT SECTION BASE · TDS GATE CHECKS VERDICT REASON & STATUTORY BASIS Rashmi Infotech Pvt Ltd 393(1) 2,40,000 PAN operative ✓ CLEAR New deductee — first payment, sampled to PAN AAXXX5521X · software NS02 24,000 @10% >₹50,000 (FA-25) ✓ desk. Profession → NS02 @10%, not development retainer e/w 194J Rate 10% prof ✓ NS03 @2%; FA-2025 threshold test passed. §393(1)·NS02 (e/w §194J(1)(a)) · §62 (e/w §44AA) · proof: 7e21…c4a9 Orbit Packaging Co 393(1) 4,00,000 2% base rate ✗ FIX Inoperative PAN = no PAN — §397(2) job-work · PAN inoperative since NS01→20% 80,000 @20% PAN inoperative ✗ higher rate (20%) applied over 2%; the 10 Apr e/w 194C 206AA 20% ✓ CA REVIEW ₹72,000 demand + §398 interest CPC-TDS would auto-raise is pre-empted. Re- checked at FVU; if PAN turns operative in the Circ. 9/2025 window, differential goes to CA determination. §397(2) (e/w §206AA) · R.114AAA · Circ. 3/2023 · Circ. 9/2025 · proof: 5f0d…a318 Speedex Logistics 393(1) 3,80,000 ≤10 carriages decl. ✓ NIL — DOC Transporter declaration (≤10 carriages) + freight · goods-carriage NS01 nil nil T-flag PAN quoted ✓ PAN archived; reported in Form 140 with transporter e/w 194C(6) F140 T-flag ✓ the T-flag. An undocumented nil is a §35(b) disallowance waiting for assessment. §393(1)·NS01 nil (e/w §194C(6)) · IT Rules 2026 flag (e/w R.31A(4)(vi)) · proof: 2c90… 41be Stratus Advisory Services 393(1) 2,00,000 Orig @2% tech ✗ FIX Misclassified NS03 2% → NS02 10%. PAN AAXXX8830X · advisory NS03→NS02 20,000 diff 16,000 §44AA prof ✓ Differential ₹16,000 recovered from the retainer · reclassified e/w 194J Diff recovered ✓ vendor's next bill, deposited pre-filing (C4) with ₹480 interest u/s 398. No residue for the justification report. §393(1) NS03→NS02 (e/w §194J) · §398 int. (e/w 201(1A)) · proof: 61b2…f0e4 Vasudha Steel Traders 393(1) 6,00,000 Buyer T/O >₹10Cr ✓ PAY NOW FY-aggregate gate fired on the crossing MS plates · FY buys crossed NS12 600 @0.1% Deducted ✗ date — 0.1% on the ₹6,00,000 excess ₹50L on 14 Jun e/w 194Q TDS.G16 fired ✓ never deducted; ₹600 + ₹12 interest in C4. The miss is the §35(b) trigger — tile 4. §393(1)·NS12 (e/w §194Q) · Circ. 13/2021 · TDS.G16 · proof: 8c17…22ab Horizon Estates 393(1) 4,50,000 §395 cert valid ✓ WATCH LDC 37.5% consumed; breach forecast office rent · §395 LDC @2% · NS05·LDC 9,000 @2% Cap 37.5% used ~Feb 2027. Beyond cap the rate reverts to cap ₹12,00,000 e/w 194I(b) TDS.G17 metered ✓ 10% — metered per payment, alert at 80%. §393(1)·NS05 (e/w §194I(b)) · §395 cert (e/w §197) · proof: 3aa9…7c51 Annapurna Caterers 393(1) 1,00,000 TDS in order ✓ WATCH Deduction clean; flag is ageing — 61 days canteen services · Udyam-micro NS01 2,000 @2% MSMED §15 ✗ 61d unpaid past the MSMED §15 window. Pay · 61 days unpaid e/w 194C before 31 Mar 2027 or ₹1,00,000 of expense is disallowed u/s 37 (e/w 43B(h)). Watch routed to accounts. §37 (e/w §43B(h)) · MSMED §15 · proof: 9d02…4b6e Zenith Fabricators 393(1) 18,000 Books ✓ AIS ✓ RECOVER Their 194Q-equivalent TDS on your sales customer · receivable-side NS12 mirror credit Own 26AS ✗ 04 Jul sits in books/AIS but not your 26AS/Form mirror e/w 194Q TDS.G18 fired ✓ 168 past their due date — their default, your cash; credit at ITR risk (2026 Rules, e/w R.37BA). Recovery letter drafted. IT Rules 2026 credit rules (e/w R.37BA) · §205 bar (e/w) · TDS.G18 · proof: e410…9cd7 Quarter totals 1,26,00,000 Deposited ₹2,99,200 + payable pre-filing ₹16,600 (+ interest ₹1,932) ties to the Form 140 3,15,800 nature-code table · receivable-side ₹18,000 tracked off-statement. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures TDS-2627-Q1-0031 · pg 2/4"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p3#b0",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Pre-default shield — CPC-TDS raises six",
+    "text": "Pre-default shield — CPC-TDS raises six. The default summary is born weeks after filing — processing u/s 399, IT Act 2025 (erstwhile 200A). Every class of it is answered before the FVU leaves classes of default — all six answered pre- this desk. filing SHORT DEDUCTION ₹72,000 (inoperative PAN → 20% applied at source) + ₹16,000 (NS03→NS02 ₹88,000 pre-empted §35(b) exposure closed at source reclass, e/w 194J, differential deposited) — the two demands CPC-TDS would have raised are pre-empted at source. SHORT PAYMENT + INTEREST 3/3 challans tied to the CSI file to the rupee — the most mechanical default tied · ₹1,932 paid tied to CSI, paid to the rupee class closed by a compile gate, not a hope. Interest u/s 398 (e/w 201(1A)) ₹1,932: late-deposit ₹1,440 (the 2-day slip that counts as 2 calendar months at 1.5%) + late-deduction ₹492 at 1%/month-or-part, challan-wise worksheet attached. LATE FEE & PENALTY ₹200/day capped at the TDS amount — nil, and provable: statement complete nil · provable 2025-Act levies (e/w §234E · 25 days before 31 Jul. Penalty exposure (e/w §271H) nil — statement correct and on time."
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p3#b1",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "§271H)",
+    "text": "§271H). PAN ERRORS 42/42 deductee PANs verified · 41 operative · 1 inoperative handled at 20%. 42/42 verified what you file becomes 42 26AS Zero PAN errors is zero Form 131 re-issue cycles and zero grievance calls in August. entries"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p3#b2",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "Vendor risk shield — one vendor master,",
+    "text": "Vendor risk shield — one vendor master,. 96 vendors scored across IT + GST gates every run · 4 flagged · GST reads from ITC-2627-MAY-0049 two statutes"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p3#b3",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST",
+    "text": "PAN OPERATIVE GATE · IT GSTR-3B FILING GATE · GST. Orbit Packaging — inoperative since 10 Apr Pinnacle Advisory — 3B unfiled · R.37A watch §397(2) 20% applied (e/w 206AA) · re-check at every payment and at ₹36,000 ITC reversal by 30 Nov 2026 if 3B not filed by 30 Sep — cross- FVU · Circ. 9/2025 window tracked · vendor notice drafted ref ITC-2627-MAY-0049 · TDS side repaired this quarter §37 (E/W 43B(H)) AGEING · IT LDC CAP RUNWAY · IT Annapurna Caterers — Udyam-micro · 61 days unpaid Horizon Estates — §395 certificate 37.5% consumed beyond the MSMED §15 window — pay before 31 Mar 2027 or ₹1,00,000 breach forecast ~Feb 2027 at current run-rate · beyond cap the rate of expense is disallowed in the year's computation reverts to 10% — metered per payment, alert at 80% FORM 140 (ERSTWHILE 26Q) — EXACTLY WHAT CHALLANS — TIED TO CSI"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p3#b4",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 3,
+    "page_role": "Shield & outputs",
+    "section": "FILES",
+    "text": "FILES. C1 · 07 May 2026 · BSR 0510342 96,400 ✓ NS01 · contracts (was 194C) (26 · incl. one 1,02,40,000 · 2,12,800 C2 · 09 Jun 2026 · 2d late → int ₹1,440 1,04,200 ✓ @20%, one nil-T) C3 · 07 Jul 2026 · BSR 0510342 98,600 ✓ NS02/03 · professional / technical (was 194J) 9,80,000 · 86,800 (9 · incl. repaired line) C4 · pre-filing · tax ₹16,600 + int u/s 398 ₹1,932 18,532 → NS05 · rent (was 194I(b)) (1 · LDC @2%) 4,50,000 · 9,000 Deposited on filing 3,17,732 NS12 · goods (was 194Q) (1 · excess over 6,00,000 · 600 Σ tax = ₹3,15,800 · Σ interest u/s 398 = ₹1,932 · CSI file 05 Jul is the pin — ₹50L) re-runs re-pin if OLTAS revises. NS04 · commission (was 194H) (5) 3,30,000 · 6,600 Total · 42 deductees 1,26,00,000 · 3,15,800 FVU-validated rows · T-flag on transporter · 206AA reason code on higher- rate row · every row reproducible against books and challans. Filing payload · F140-Q1TY2627- Form 131 queue (erstwhile 16A) · 42 Memo (off-return) · 3 packs drafted MERIDIAN.fvu certificates · due 15 Aug Zenith recovery letter · Orbit PAN-operative FVU-validated, RPU-compatible · released only auto-queued from TRACES on statement notice · 43B(h) ageing watch to accounts on sign-off · higher-rate & nil-rate reason codes processing · zero PAN errors = zero Form 131 re- embedded issue cycles Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures TDS-2627-Q1-0031 · pg 3/4"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b0",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "Prepared by · review & release",
+    "text": "Prepared by · review & release. ENGINE SentinelXOS — Rakshak Systems' deterministic"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b1",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "PRE-FILING REVIEW & APPROVAL",
+    "text": "PRE-FILING REVIEW & APPROVAL. compliance engine · TDS·26AS verdict v0.9.3 RUN HASH sha256:c4a1…7d2e Chartered Accountant — Name"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b2",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "BASIS Deterministic gate ladder · 18 tie-out gates · effective-",
+    "text": "BASIS Deterministic gate ladder · 18 tie-out gates · effective-. dated section-rate matrix · vendor risk composite Membership No. ____________ Firm / FRN ____________ Signature ____________________ Date ___ / ___ / 2026"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b3",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "INPUTS Payment ledger (2,140) · vendor master (96) · 3",
+    "text": "INPUTS Payment ledger (2,140) · vendor master (96) · 3. challans + CSI 05 Jul · TRACES LDC register · own ✓ Review complete — release FVU for filing 26AS/AIS 04 Jul · prior-quarter statement (26Q, 1961 regime) Authorised Signatory — Name & Designation CONSUMES Shared vendor master · ITC-run GST flags (R.37A, Signature ____________________ Date ___ / ___ / 2026 pinned) · CSI · LDC register ✓ Approved — Form 140 filing & Form 131 issuance PUBLISHES PAN + §37 + LDC watches → vendor score · 26AS-gap recovery → memo queue · challan ties → audit The quarterly statement is furnished by the deductor u/s 397(3), IT Act schedule 2025 (erstwhile 200(3)); the CA sign-off records a pre-filing review engagement. GENERATED 06 Jul 2026 · 09:26 IST Computed under statute at compile time; no model inference at runtime. Every proof hash is the SHA-256 digest of its canonical verdict record; the run hash covers the full data model, including the threshold-memory and LDC-consumption ledgers. Verdicts, gates, and proof trail persist for scrutiny. Rates/thresholds are effective-dated; §206AB/§206CCA retired 01 Apr 2025 — versioned out, not deleted. Transition: deductions on/after 01 Apr 2026 report under the Income-tax Act, 2025 (§392/393/394 + nature codes); 1961-Act sections appear only as legacy references (crosswalk below), resolved through the same effective-dated versioning."
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b4",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "GATE ADDITIONS — V0.9.1",
+    "text": "GATE ADDITIONS — V0.9.1. TDS.G16 · FY-threshold memory — NS12/NS01 aggregation carries across quarters; a mid-year crossing fires on the crossing date, or halt TDS.G17 · LDC cap continuity — opening + consumed = closing ≤ cap, or halt; runway forecast per payment, alert at 80% TDS.G18 · 26AS mirror — books/AIS ↔ own 26AS/Form 168; any gap past the counterparty's due date → recovery queue"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b5",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "1961 → 2025 CROSSWALK — THIS STATEMENT",
+    "text": "1961 → 2025 CROSSWALK — THIS STATEMENT. (V0.9.3 RULE MATRIX)"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b6",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "194C → §393(1) · NS01 1% / 2%",
+    "text": "194C → §393(1) · NS01 1% / 2%. 194J → §393(1) · NS02 / NS03 10% / 2% 194I(b) → §393(1) · NS05 10% (LDC 2%)"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b7",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "194Q → §393(1) · NS12 0.1%",
+    "text": "194Q → §393(1) · NS12 0.1%. 194H → §393(1) · NS04 2% 197→395 · 206AA→397(2) · 201(1A)→398 · other provisions 200A→399 · 40(a)(ia)→35(b) · 43B(h)→37 Forms: 26Q → 140 · 16A → 131 · 26AS → 168 · w.e.f. 01 Apr 2026 Form 13 → 128"
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b8",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "Basis of preparation",
+    "text": "Basis of preparation. Every verdict is computed under statute at compile time and recorded with its section, rate authority, challan reference, and proof hash. The deduction runs in both directions: what this TAN files becomes 42 counterparties' 26AS; what 30-odd customers file becomes this PAN's credit — both sides reconcile from one ledger. The quarter's decision log is the same ledger that answers a TRACES default and folds into the tax-audit TDS-default schedule. A recorder, not a calculator; the file defends itself in scrutiny."
+  },
+  {
+    "chunk_id": "TDS-2627-Q1-0031#p4#b9",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "page": 4,
+    "page_role": "Provenance & sign-off",
+    "section": "SAME VERDICT LEDGER · RELATED MODULES",
+    "text": "SAME VERDICT LEDGER · RELATED MODULES. ITC verdict · 26AS / TDS recon · live · e-Invoice / IRN validation · Vendor compliance score · GSTR-9 annual prep · Notice / DRC response Rakshak Systems · SentinelXOS engine — pre-filing TDS review instrument. Decision aid; deduction, deposit, and filing responsibility rest with the deductor; final review responsibility rests with the signing Chartered Accountant. Interest and disallowance figures are computed positions, not determinations. Sample dataset with illustrative figures; TAN, PAN, GSTIN and party details are fictitious. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures TDS-2627-Q1-0031 · pg 4/4"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b0",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "Rakshak Systems REPORT # WIRE-MERIDIAN-0001",
+    "text": "Rakshak Systems REPORT # WIRE-MERIDIAN-0001. Meridian Components Pvt Ltd · sample universe"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b1",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "INTEGRATED WORKFLOWS · ONE LEDGER, SIX",
+    "text": "INTEGRATED WORKFLOWS · ONE LEDGER, SIX. AGENTS ◉ DETERMINISTIC · ZERO SAMPLE DATASET ·"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b2",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "RUNTIME AI ILLUSTRATIVE",
+    "text": "RUNTIME AI ILLUSTRATIVE. Two years on the wire — how No workflow is a silo. Agents communicate through hash-addressed records on one verdict"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b3",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "ledger — never by calling each other.",
+    "text": "ledger — never by calling each other.. the agents talk SEP 2024 R.37 breach caught — Pinnacle Advisory LLP publishes watch.raised → vendor ITC agent Supplier unpaid past 180 days; ₹1,80,000 reversed in 4(B)(2), reclaimable. Run score · reversal record → annual ITC-2425-SEP-0023 signs the verdict. fold run 0023 · proof 4f8e…f359 NOV 2024 RCM gap flagged — advocate fees ₹36,000 publishes verdict.created ITC agent Self-invoice u/s 31(3)(f) missing; exposure recorded, not silenced. Run ITC-2425- (exposure) → annual agent queue NOV-0025. run 0025 · proof 4067…8e66 JAN 2025 R.37 reclaim — Pinnacle paid publishes verdict.created → 6H feed ITC agent Supplier settled; ₹1,80,000 reclaimed via 6H, continuity gate ties · score.updated (probation) reversal→reclaim. Run ITC-2425-JAN-0027. run 0027 · proof 4f8e…f359 DEC 2025 ANN-2425-FY-0012 — the year folds consumes 12 runs by hash · Annual agent Consumes 12 pinned monthly runs (0018→0029). 6A1 ₹3,20,000 · 8C ₹4,80,000 publishes payment.recorded ARN tied; Nov RCM discharged ₹42,320 via DRC-03 before filing. AD2712250098765 → litigation pool pins 12 run hashes MAY 2026 Pinnacle breaches 180 days — again publishes watch.raised R.37A → TDS ITC agent Repeat offence, new FY: ₹36,000 REVERSE + R.37A watch (supplier 3B unfiled). shield, vendor score (repeat- Run ITC-2627-MAY-0049. offender) · 6B/6A1 feed → draft.updated ANN-2627-FY run 0049 · proof a820…5ab8 JUL 2026 Q1 statement — flags consumed, not rediscovered consumes ITC flag (pinned run 0049) TDS agent TDS-2627-Q1-0031 reads the pinned Pinnacle R.37A flag into its vendor shield; · publishes 3× watch.raised → publishes its own PAN-inoperative, LDC-runway, §37-ageing watches back. vendor score pin: sha256 of 0049 JUL 2026 ASMT-10 lands — reply retrieved in 6.8s consumes ANN + ITC records by proof Notice agent NTC-2425-JUL-0003 maps 4/4 paras to existing records: spillover (6A1), RCM hash · publishes litigation file (paid, ARN attached), CN timing (T.11), interest ₹1,142 gated for CA. Escalation 3d5b…bbf1 · 4067…8e66 · 72bc…331f lane: empty. THE PINNACLE THREAD gold-marked rows: one vendor, four agents, two years — monthly catch → score memory → repeat catch → TDS"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b4",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "shield. Institutional memory without a meeting.",
+    "text": "shield. Institutional memory without a meeting.. THE CONTRACT (§17, REPORT GRAMMAR) EVENT CLASSES ON THE WIRE Reports are independently signed memos; the ledger is the office. A verdict.created · watch.raised · payment.recorded · consumer pins the producer's run hash — if the producer re-runs, the draft.updated · score.updated · escalation.opened"
+  },
+  {
+    "chunk_id": "WIRE-MERIDIAN-0001#p1#b5",
+    "report_id": "WIRE-MERIDIAN-0001",
+    "module": "WIRE",
+    "page": 1,
+    "page_role": "Cover & verdict at a glance",
+    "section": "staleness gate fires: re-pin or halt. Inter-agent messages are ledger",
+    "text": "staleness gate fires: re-pin or halt. Inter-agent messages are ledger. Six agents, one file, zero meetings. records, never model calls; the whole conversation graph replays deterministically. Rakshak Systems · SentinelXOS engine — sample dataset, illustrative figures WIRE-MERIDIAN-0001 · pg 1/1"
+  }
+]

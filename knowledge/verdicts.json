@@ -1,0 +1,810 @@
+[
+  {
+    "verdict_id": "ANN-2425-FY-0012#v1",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "Turnover gap — CN",
+    "party": null,
+    "verdict_alias": "RECONCILED",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "reconciled clean, no liability",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "2,50,000",
+        "value": 250000
+      }
+    ],
+    "primary_amount": 250000,
+    "citations": [
+      "Table 11",
+      "Table 5E",
+      "§34",
+      "GSTR-9 T.11",
+      "9C T.5E"
+    ],
+    "proof": "72bc…331f",
+    "text": "Reconciliation ledger — 6 decisions RECONCILED PAY LAPSE DISCLOSED CA REVIEW ITEM AMOUNT GATE CHECKS VERDICT REASON & STATUTORY BASIS Turnover gap — CN 2,50,000 Books ✓ RECONCILED Credit note against a Mar 2025 supply, issued and accounted timing GSTR-1 Δ Apr'25 in Apr 2025; reported in the Apr 2025 GSTR-1. Declared via Books vs GSTR-1 · Mar next-FY returns → GSTR-9 Table 11; 9C Table 5E adjustment 2025 supply closes the gap. No liability. §34 · GSTR-9 T.11 · 9C T.5E · proof: 72bc…331f"
+  },
+  {
+    "verdict_id": "ANN-2425-FY-0012#v2",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "fees 3B 3.1(d)",
+    "party": null,
+    "verdict_alias": "PAY",
+    "verdict_class": "PAY",
+    "verdict_color": "red",
+    "verdict_meaning": "pay / admitted liability",
+    "ca_review": true,
+    "amounts": [
+      {
+        "raw": "36,000",
+        "value": 36000
+      },
+      {
+        "raw": "₹2,00,000",
+        "value": 200000
+      },
+      {
+        "raw": "₹36,000",
+        "value": 36000
+      },
+      {
+        "raw": "₹6,320",
+        "value": 6320
+      }
+    ],
+    "primary_amount": 36000,
+    "citations": [
+      "9C Part V",
+      "§31(3)(f)",
+      "R.47A",
+      "§9(3)",
+      "Circ. 211/5/2024",
+      "§50",
+      "§122"
+    ],
+    "proof": "4067…8e66",
+    "text": "RCM missed — legal 36,000 Self-inv ✗ PAY Reverse-charge on advocate fees (taxable value ₹2,00,000; fees 3B 3.1(d) ✗ supplier unregistered) — never self-invoiced u/s 31(3)(f) or CA REVIEW Unregistered advocate · Nov §9(3) paid. Discharge ₹36,000 in cash via DRC-03 with interest u/s 2024 50 (₹6,320 · 356 days @ 18%) before filing — 9C Part V recommendation. Corresponding ITC claimable subject to eligibility, self-invoice generation and RCM tax payment; for unregistered RCM supplies the §16(4) clock runs from the self-invoice financial year. Delayed self-invoicing may attract penalty u/s 122 — exposure, if any, for the reviewing CA. §31(3)(f) · R.47A · §9(3) · Notif. 13/2017-CT(R) · Circ. 211/5/2024 · §50 · §122 · proof: 4067…8e66"
+  },
+  {
+    "verdict_id": "ANN-2425-FY-0012#v3",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "Table 8D positive gap",
+    "party": null,
+    "verdict_alias": "LAPSE",
+    "verdict_class": "DENY",
+    "verdict_color": "ink",
+    "verdict_meaning": "eligibility lapsed / window closed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "1,10,000",
+        "value": 110000
+      },
+      {
+        "raw": "₹65,000",
+        "value": 65000
+      },
+      {
+        "raw": "₹45,000",
+        "value": 45000
+      }
+    ],
+    "primary_amount": 110000,
+    "citations": [
+      "Table 8D",
+      "§16(4)",
+      "§17(5)",
+      "GSTR-9 T.8E/8F"
+    ],
+    "proof": "a35d…aabd",
+    "text": "Table 8D positive gap 1,10,000 8A ✓ 3B ✗ LAPSE In 2B, never availed. ₹65,000 is §17(5) ineligible → 8F, 2B credit never claimed > 30 Nov'25 correctly skipped. ₹45,000 was eligible but missed; §16(4) window closed 30 Nov 2025 → 8E. Disclosure only — no credit-ledger debit. §16(4) · §17(5) · GSTR-9 T.8E/8F · proof: a35d…aabd"
+  },
+  {
+    "verdict_id": "ANN-2425-FY-0012#v4",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "Vasudha Steel Traders",
+    "party": "Vasudha Steel Traders",
+    "verdict_alias": "DISCLOSED",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "disclosure only, no ledger debit",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "3,20,000",
+        "value": 320000
+      }
+    ],
+    "primary_amount": 320000,
+    "citations": [
+      "Table 6A1",
+      "Table 8",
+      "GSTR-9 T.6A1",
+      "9C T.12B"
+    ],
+    "proof": "3d5b…bbf1",
+    "text": "Prior-FY ITC availed 3,20,000 2B FY23-24 DISCLOSED FY 2023-24 credit claimed in FY 2024-25 3Bs within the this FY Claimed ≤ Nov'24 §16(4) window. Reported in new Table 6A1 (inside 6A) — FY 2023-24 spillover in · 41 excluded from current-year Table 8 math, so no artificial 8D invoices, 9 suppliers (incl. mismatch. Vasudha Steel Traders — GSTR-9 T.6A1 · 9C T.12B · proof: 3d5b…bbf1"
+  },
+  {
+    "verdict_id": "ANN-2425-FY-0012#v5",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "late-filer pattern persists into",
+    "party": null,
+    "verdict_alias": "DISCLOSED",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "disclosure only, no ledger debit",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "4,80,000",
+        "value": 480000
+      }
+    ],
+    "primary_amount": 480000,
+    "citations": [
+      "Table 13",
+      "T.13",
+      "§16(4)",
+      "GSTR-9 T.8C/T",
+      "9C T.12C"
+    ],
+    "proof": "147b…d580",
+    "text": "late-filer pattern persists into FY 26-27) This-FY ITC availed 4,80,000 8A ✓ DISCLOSED Supplier-late invoices of FY 2024-25 claimed first time in Apr– next FY 3B Apr–Oct'25 Oct 2025 3Bs. Reported in 8C and Table 13, tied to the rupee FY 2024-25 spillover out 8C = T.13 (imports and RCM excluded from 8C per scope rules). §16(4) · GSTR-9 T.8C/T.13 · 9C T.12C · proof: 147b…d580"
+  },
+  {
+    "verdict_id": "ANN-2425-FY-0012#v6",
+    "report_id": "ANN-2425-FY-0012",
+    "module": "ANN",
+    "item": "Pinnacle Advisory LLP",
+    "party": "Pinnacle Advisory LLP",
+    "verdict_alias": "RECONCILED",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "reconciled clean, no liability",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "1,80,000",
+        "value": 180000
+      }
+    ],
+    "primary_amount": 180000,
+    "citations": [
+      "Rule 37",
+      "R.37",
+      "§16(2)",
+      "GSTR-9 T.6H"
+    ],
+    "proof": "4f8e…f359",
+    "text": "Rule 37 reclaim — 1,80,000 7A rev ✓ RECONCILED Reversed under Rule 37 in Sep 2024, supplier paid, reclaimed Pinnacle Advisory LLP 6H reclaim ✓ Jan 2025. Reported in 6H only; from FY 2024-25, 8B auto- 180-day reversal Sep'24, 8B delinked populates from 6B alone, so the reclaim no longer distorts 8D. repaid, reclaimed Jan'25 Same counterparty breaches 180 days again in FY 26-27 (REVERSE, ITC-2627-MAY-0049) — vendor score downgraded, repeat-offender flag. R.37 · 2nd proviso §16(2) · GSTR-9 T.6H · proof: 4f8e…f359"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v1",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Rashmi Infotech Pvt Ltd",
+    "party": "Rashmi Infotech Pvt Ltd",
+    "verdict_alias": "CLAIM",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "credit/claim allowed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "4,00,000",
+        "value": 400000
+      },
+      {
+        "raw": "72,000",
+        "value": 72000
+      }
+    ],
+    "primary_amount": 400000,
+    "citations": [
+      "§16(2)(aa)",
+      "R.36(4)"
+    ],
+    "proof": "0b36…0930",
+    "text": "Transaction ledger — 7 decisions CLAIM FIX DEFER BLOCK REVERSE CA REVIEW TAXABLE · SUPPLIER / INVOICE GATE CHECKS VERDICT REASON & STATUTORY BASIS ITC Rashmi Infotech Pvt Ltd 4,00,000 New vendor · 2B ✓ CLAIM New supplier — first transaction, sampled to desk. All 27XXXXX5521X1Z3 · 72,000 IMS acc/deemed ✓ §16(2) conditions met; in 2B; IMS accepted/deemed. RIT/2627/0412 · laptops & IT ≤180d · Recd ✓ Full credit eligible. hardware · FY 26-27 §16(2)(aa) · R.36(4) · proof: 0b36…0930"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v2",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Orbit Packaging Co",
+    "party": "Orbit Packaging Co",
+    "verdict_alias": "DEFER",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "held back deliberately, protected",
+    "ca_review": true,
+    "amounts": [
+      {
+        "raw": "1,50,000",
+        "value": 150000
+      },
+      {
+        "raw": "27,000",
+        "value": 27000
+      }
+    ],
+    "primary_amount": 150000,
+    "citations": [
+      "§16(2)(b)",
+      "Notif. 16/2025-CT",
+      "R.88D"
+    ],
+    "proof": "28ad…db8c",
+    "text": "Orbit Packaging Co 1,50,000 IMS Pending ✓ DEFER In IMS but goods not received by the 2B cut-off — 27XXXXX8842X1Z9 · OPC-1187 · 27,000 §16(2)(b) received ✗ §16(2)(b) unmet. Pended in IMS (permitted scenario): corrugated packaging · in transit · stays out of 2B and auto-populated 4(A); reduces 2B- FY 26-27 vs-3B excess-claim exposure. Eligible for CA review when reflected in GSTR-2B. §16(2)(b) · IMS · Notif. 16/2025-CT · R.88D · proof: 28ad…db8c"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v3",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Speedex Logistics",
+    "party": "Speedex Logistics",
+    "verdict_alias": "FIX",
+    "verdict_class": "REPAIRED",
+    "verdict_color": "green-outline",
+    "verdict_meaning": "auto-repaired, then allowed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "50,000",
+        "value": 50000
+      },
+      {
+        "raw": "9,000",
+        "value": 9000
+      }
+    ],
+    "primary_amount": 50000,
+    "citations": [
+      "§16(2)(aa) met",
+      "R.36(4)"
+    ],
+    "proof": "b112…1ce0",
+    "text": "Speedex Logistics 50,000 2B* ✓ FIX Invoice-ref format mismatch only; auto-matched on 27XXXXX3390X1Z1 · PR: SPX- 9,000 IMS acc/deemed ✓ GSTIN + date + value. Repaired — claimable this 2241 / 2B: SPX/2241/26 · courier & Ref ≠ period. Vendor correction queued. freight · FY 26-27 §16(2)(aa) met · R.36(4) · proof: b112…1ce0"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v4",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Annapurna Caterers",
+    "party": "Annapurna Caterers",
+    "verdict_alias": "BLOCK",
+    "verdict_class": "DENY",
+    "verdict_color": "ink",
+    "verdict_meaning": "blocked credit, cost to P&L",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "1,00,000",
+        "value": 100000
+      },
+      {
+        "raw": "5,000",
+        "value": 5000
+      }
+    ],
+    "primary_amount": 100000,
+    "citations": [
+      "§17(5)(b)(i)",
+      "Circ. 170/02/2022"
+    ],
+    "proof": "da25…8d0c",
+    "text": "Annapurna Caterers 1,00,000 2B ✓ BLOCK Food & beverage for staff — blocked credit 27XXXXX1123X1Z0 · AC/0934 · 5,000 §17(5)(b)(i) ✗ irrespective of 2B presence. Mapped for 4(B)(1) staff catering & sweets · FY 26-27 treatment per Circular 170/02/2022. Cost to P&L; no silent netting-off. §17(5)(b)(i) · Circ. 170/02/2022 · proof: da25…8d0c"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v5",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Vasudha Steel Traders",
+    "party": "Vasudha Steel Traders",
+    "verdict_alias": "CLAIM",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "credit/claim allowed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "1,20,000",
+        "value": 120000
+      },
+      {
+        "raw": "21,600",
+        "value": 21600
+      }
+    ],
+    "primary_amount": 120000,
+    "citations": [
+      "Table 6A1",
+      "Table 8",
+      "§16(4)",
+      "GSTR-9 T.6A1"
+    ],
+    "proof": "4c88…21e7",
+    "text": "Vasudha Steel Traders 1,20,000 2B (this month) ✓ CLAIM Prior-FY invoice surfacing in the May-26 2B — 27XXXXX2214X1Z6 · 21,600 IMS acc/deemed ✓ supplier reported late. Claim now, 167 days inside the spillover-in VST/2526/0891 · inv 28 Mar 2026 · In §16(4) window ✓ §16(4) window; vintage-tagged for annual Table 6A1 MS plates · supplier filed late · FY so it never distorts current-year Table 8. 25-26 · §16(4) 167d left §16(4) · GSTR-9 T.6A1 → ANN-2627-FY draft · proof: 4c88…21e7"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v6",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Nimbus Electricals",
+    "party": "Nimbus Electricals",
+    "verdict_alias": "CLAIM",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "credit/claim allowed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "80,000",
+        "value": 80000
+      },
+      {
+        "raw": "14,400",
+        "value": 14400
+      }
+    ],
+    "primary_amount": 80000,
+    "citations": [
+      "§16(2)(b) met"
+    ],
+    "proof": "9e10…77c4",
+    "text": "Nimbus Electricals 80,000 Goods recd 06 May ✓ CLAIM Apr-26 deferral (goods in transit) now received and in 27XXXXX7719X1Z2 · 14,400 IMS acc/deemed ✓ 2B — claim releases this period. Deferral ledger matured NE/2627/0142 · deferred Apr-26 · In 2B this month ✓ updated; continuity gate ties opening → closing. panel components · matured · FY §16(2)(b) met · proof: 9e10…77c4"
+  },
+  {
+    "verdict_id": "ITC-2627-MAY-0049#v7",
+    "report_id": "ITC-2627-MAY-0049",
+    "module": "ITC",
+    "item": "Pinnacle Advisory LLP",
+    "party": "Pinnacle Advisory LLP",
+    "verdict_alias": "REVERSE",
+    "verdict_class": "REVERSE",
+    "verdict_color": "red-outline",
+    "verdict_meaning": "self-reverse now, reclaim on payment",
+    "ca_review": true,
+    "amounts": [
+      {
+        "raw": "2,00,000",
+        "value": 200000
+      },
+      {
+        "raw": "36,000",
+        "value": 36000
+      }
+    ],
+    "primary_amount": 200000,
+    "citations": [
+      "Rule 37",
+      "R.37A",
+      "§16(2)",
+      "R.37",
+      "§50"
+    ],
+    "proof": "a820…5ab8",
+    "text": "26-27 Pinnacle Advisory LLP 2,00,000 >180d unpaid ✗ REVERSE Availed Oct-25; supplier unpaid past 180 days (expiry 27XXXXX7765X1Z4 · PA-2025-118 36,000 Supplier 3B ✗ 12 Apr 2026) — Rule 37 reversal due in 4(B)(2), CA REVIEW · availed Oct-25 3B · consultancy · R.37A watch reclaimable on payment. Supplier 3B unfiled — 180d unpaid · FY 25-26 prior claim R.37A watch: statutory reversal by 30 Nov 2026 if not filed by 30 Sep 2026. Interest u/s 50 utilization- dependent; flagged for CA determination. 2nd proviso §16(2) · R.37 · R.37A · §50 · proof: a820… 5ab8"
+  },
+  {
+    "verdict_id": "NTC-2425-JUL-0003#v1",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "item": "Para 1 — ITC availed not",
+    "party": null,
+    "verdict_alias": "EXPLAIN",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "explained with evidence, no liability",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "3,20,000",
+        "value": 320000
+      },
+      {
+        "raw": "₹3,20,000",
+        "value": 320000
+      }
+    ],
+    "primary_amount": 320000,
+    "citations": [
+      "T.6A1",
+      "Table 6A1",
+      "Table 12B",
+      "§16(4)",
+      "GSTR-9 T.6A1",
+      "9C T.12B"
+    ],
+    "proof": "3d5b…bbf1",
+    "text": "Para-wise response ledger — 4 decisions EXPLAIN PAID ADMIT + PAY CONTEST CA REVIEW PARA / ALLEGATION AMOUNT GATE CHECKS VERDICT RESPONSE & STATUTORY BASIS Para 1 — ITC availed not 3,20,000 FY23-24 2B ✓ EXPLAIN Credit pertains to FY 2023-24 invoices reflected in FY in FY 2024-25 GSTR-2B ≤ §16(4) window ✓ 2023-24 GSTR-2B and availed in FY 2024-25 3Bs ITC alleged excess 3B claims exceed 2B of the T.6A1 disclosed ✓ within the §16(4) window — spillover-in, disclosed in period by ₹3,20,000 · Apr–Nov GSTR-9 Table 6A1 and 9C Table 12B. Period-wise 2B 2024 comparison is the wrong frame; invoice-level annexure maps each claim to its source 2B. §16(4) · GSTR-9 T.6A1 · 9C T.12B · Annexure A · proof: 3d5b…bbf1"
+  },
+  {
+    "verdict_id": "NTC-2425-JUL-0003#v2",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "item": "Para 2 — RCM not",
+    "party": null,
+    "verdict_alias": "PAID",
+    "verdict_class": "SETTLED",
+    "verdict_color": "blue",
+    "verdict_meaning": "already paid pre-filing/pre-notice",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "36,000",
+        "value": 36000
+      },
+      {
+        "raw": "₹36,000",
+        "value": 36000
+      },
+      {
+        "raw": "₹6,320",
+        "value": 6320
+      },
+      {
+        "raw": "6,320",
+        "value": 6320
+      }
+    ],
+    "primary_amount": 36000,
+    "citations": [
+      "9C Part V",
+      "§9(3)",
+      "§31(3)(f)",
+      "R.47A",
+      "§50",
+      "Circ. 211/5/2024"
+    ],
+    "proof": "4067…8e66",
+    "text": "Para 2 — RCM not 36,000 DRC-03 10 Dec 25 ✓ PAID Discrepancy is real but already self-surfaced and discharged, legal fees Int. u/s 50 paid ✓ discharged: ₹36,000 tax + ₹6,320 interest paid in cash + int. 6,320 3.1(d) nil in Nov'24 3B against 9C Part V ✓ via DRC-03 dated 10 Dec 2025 (ARN advocate invoice · §9(3) AD2712250098765), before GSTR-9/9C filing, and recommended in 9C Part V. Voluntary payment predates the notice — §73(5)/74A(8) posture; no further liability. Payment challan and 9C extract annexed. §9(3) · §31(3)(f) · R.47A · §50 · Circ. 211/5/2024 · Annexure B · proof: 4067…8e66"
+  },
+  {
+    "verdict_id": "NTC-2425-JUL-0003#v3",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "item": "Para 3 — GSTR-1 vs 3B",
+    "party": null,
+    "verdict_alias": "EXPLAIN",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "explained with evidence, no liability",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "45,000",
+        "value": 45000
+      },
+      {
+        "raw": "₹2,50,000",
+        "value": 250000
+      },
+      {
+        "raw": "₹45,000",
+        "value": 45000
+      }
+    ],
+    "primary_amount": 45000,
+    "citations": [
+      "GSTR-9 T.11",
+      "9C T.5E",
+      "Table 11",
+      "Table 5E",
+      "§34"
+    ],
+    "proof": "72bc…331f",
+    "text": "Para 3 — GSTR-1 vs 3B 45,000 CN §34 Apr'25 ✓ EXPLAIN Gap is a credit-note timing artefact: CN against a Mar turnover gap, Mar'25 tax alleged short GSTR-9 T.11 ✓ 2025 supply was issued and reported in the Apr 2025 Outward value mismatch 9C T.5E = 0 gap ✓ GSTR-1, declared through next-FY returns and folded ₹2,50,000 · tax effect ₹45,000 into GSTR-9 Table 11; 9C Table 5E closes the reconciliation to zero. No short payment of tax at any point; ledger walk annexed rupee-to-rupee. §34 · GSTR-9 T.11 · 9C T.5E · Annexure C · proof: 72bc… 331f"
+  },
+  {
+    "verdict_id": "NTC-2425-JUL-0003#v4",
+    "report_id": "NTC-2425-JUL-0003",
+    "module": "NTC",
+    "item": "Para 4 — Interest on",
+    "party": null,
+    "verdict_alias": "ADMIT + PAY",
+    "verdict_class": "PAY",
+    "verdict_color": "red",
+    "verdict_meaning": "admission priced to statute, pay",
+    "ca_review": true,
+    "amounts": [
+      {
+        "raw": "1,142",
+        "value": 1142
+      },
+      {
+        "raw": "₹7,72,000",
+        "value": 772000
+      },
+      {
+        "raw": "₹1,142",
+        "value": 1142
+      },
+      {
+        "raw": "₹7,72,000",
+        "value": 772000
+      }
+    ],
+    "primary_amount": 1142,
+    "citations": [
+      "§50(1) proviso",
+      "R.88B"
+    ],
+    "proof": "9c41…e22a",
+    "text": "Para 4 — Interest on 1,142 Filed +3d ✗ ADMIT + PAY Delay admitted. Interest computed on the cash-paid delayed Apr'24 3B Cash portion only ✓ liability only (₹7,72,000 × 18% × 3/365 = ₹1,142) per interest u/s 50 Return filed 23 May 2024 vs due ₹7,72,000 base ✓ CA REVIEW proviso to §50(1) — not on gross liability as the notice 20 May 2024 · 3 days implies. Pay via DRC-03 before submitting ASMT-11; worksheet at Annexure D. Admission requires explicit CA approval — gate NTC.G3 holds the payload until ticked. §50(1) proviso · R.88B · Annexure D · proof: 9c41…e22a"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v1",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Rashmi Infotech Pvt Ltd",
+    "party": "Rashmi Infotech Pvt Ltd",
+    "verdict_alias": "CLEAR",
+    "verdict_class": "PASS",
+    "verdict_color": "green",
+    "verdict_meaning": "deduction correct, no action",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "2,40,000",
+        "value": 240000
+      },
+      {
+        "raw": "24,000",
+        "value": 24000
+      }
+    ],
+    "primary_amount": 240000,
+    "citations": [
+      "NS02",
+      "NS03",
+      "§393(1)",
+      "§194J(1)(a))",
+      "§44AA)"
+    ],
+    "proof": "7e21…c4a9",
+    "text": "Deduction ledger — 8 decisions CLEAR FIX PAY NOW NIL–DOC / WATCH RECOVER CA REVIEW DEDUCTEE / PAYMENT SECTION BASE · TDS GATE CHECKS VERDICT REASON & STATUTORY BASIS Rashmi Infotech Pvt Ltd 393(1) 2,40,000 PAN operative ✓ CLEAR New deductee — first payment, sampled to PAN AAXXX5521X · software NS02 24,000 @10% >₹50,000 (FA-25) ✓ desk. Profession → NS02 @10%, not development retainer e/w 194J Rate 10% prof ✓ NS03 @2%; FA-2025 threshold test passed. §393(1)·NS02 (e/w §194J(1)(a)) · §62 (e/w §44AA) · proof: 7e21…c4a9"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v2",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Orbit Packaging Co",
+    "party": "Orbit Packaging Co",
+    "verdict_alias": "FIX",
+    "verdict_class": "REPAIRED",
+    "verdict_color": "green-outline",
+    "verdict_meaning": "auto-repaired, then allowed",
+    "ca_review": true,
+    "amounts": [
+      {
+        "raw": "4,00,000",
+        "value": 400000
+      },
+      {
+        "raw": "80,000",
+        "value": 80000
+      },
+      {
+        "raw": "₹72,000",
+        "value": 72000
+      }
+    ],
+    "primary_amount": 400000,
+    "citations": [
+      "NS01",
+      "Circ. 9/2025",
+      "§206AA)",
+      "R.114AAA",
+      "Circ.\n3/2023"
+    ],
+    "proof": "5f0d…a318",
+    "text": "Orbit Packaging Co 393(1) 4,00,000 2% base rate ✗ FIX Inoperative PAN = no PAN — §397(2) job-work · PAN inoperative since NS01→20% 80,000 @20% PAN inoperative ✗ higher rate (20%) applied over 2%; the 10 Apr e/w 194C 206AA 20% ✓ CA REVIEW ₹72,000 demand + §398 interest CPC-TDS would auto-raise is pre-empted. Re- checked at FVU; if PAN turns operative in the Circ. 9/2025 window, differential goes to CA determination. §397(2) (e/w §206AA) · R.114AAA · Circ. 3/2023 · Circ. 9/2025 · proof: 5f0d…a318"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v3",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Speedex Logistics",
+    "party": "Speedex Logistics",
+    "verdict_alias": "NIL - DOC",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "nil but documented / watch",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "3,80,000",
+        "value": 380000
+      }
+    ],
+    "primary_amount": 380000,
+    "citations": [
+      "NS01",
+      "§393(1)",
+      "§194C(6))",
+      "R.31A(4)(vi))"
+    ],
+    "proof": "2c90…41be",
+    "text": "Speedex Logistics 393(1) 3,80,000 ≤10 carriages decl. ✓ NIL — DOC Transporter declaration (≤10 carriages) + freight · goods-carriage NS01 nil nil T-flag PAN quoted ✓ PAN archived; reported in Form 140 with transporter e/w 194C(6) F140 T-flag ✓ the T-flag. An undocumented nil is a §35(b) disallowance waiting for assessment. §393(1)·NS01 nil (e/w §194C(6)) · IT Rules 2026 flag (e/w R.31A(4)(vi)) · proof: 2c90… 41be"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v4",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Stratus Advisory Services",
+    "party": "Stratus Advisory Services",
+    "verdict_alias": "FIX",
+    "verdict_class": "REPAIRED",
+    "verdict_color": "green-outline",
+    "verdict_meaning": "auto-repaired, then allowed",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "2,00,000",
+        "value": 200000
+      },
+      {
+        "raw": "20,000",
+        "value": 20000
+      },
+      {
+        "raw": "16,000",
+        "value": 16000
+      },
+      {
+        "raw": "₹16,000",
+        "value": 16000
+      },
+      {
+        "raw": "₹480",
+        "value": 480
+      }
+    ],
+    "primary_amount": 200000,
+    "citations": [
+      "NS03",
+      "NS02",
+      "§194J)"
+    ],
+    "proof": "61b2…f0e4",
+    "text": "Stratus Advisory Services 393(1) 2,00,000 Orig @2% tech ✗ FIX Misclassified NS03 2% → NS02 10%. PAN AAXXX8830X · advisory NS03→NS02 20,000 diff 16,000 §44AA prof ✓ Differential ₹16,000 recovered from the retainer · reclassified e/w 194J Diff recovered ✓ vendor's next bill, deposited pre-filing (C4) with ₹480 interest u/s 398. No residue for the justification report. §393(1) NS03→NS02 (e/w §194J) · §398 int. (e/w 201(1A)) · proof: 61b2…f0e4"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v5",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Vasudha Steel Traders",
+    "party": "Vasudha Steel Traders",
+    "verdict_alias": "PAY NOW",
+    "verdict_class": "PAY",
+    "verdict_color": "red",
+    "verdict_meaning": "pay before filing",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "6,00,000",
+        "value": 600000
+      },
+      {
+        "raw": "₹6,00,000",
+        "value": 600000
+      },
+      {
+        "raw": "₹600",
+        "value": 600
+      }
+    ],
+    "primary_amount": 600000,
+    "citations": [
+      "NS12",
+      "§393(1)",
+      "§194Q)",
+      "Circ. 13/2021"
+    ],
+    "proof": "8c17…22ab",
+    "text": "Vasudha Steel Traders 393(1) 6,00,000 Buyer T/O >₹10Cr ✓ PAY NOW FY-aggregate gate fired on the crossing MS plates · FY buys crossed NS12 600 @0.1% Deducted ✗ date — 0.1% on the ₹6,00,000 excess ₹50L on 14 Jun e/w 194Q TDS.G16 fired ✓ never deducted; ₹600 + ₹12 interest in C4. The miss is the §35(b) trigger — tile 4. §393(1)·NS12 (e/w §194Q) · Circ. 13/2021 · TDS.G16 · proof: 8c17…22ab"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v6",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Horizon Estates",
+    "party": "Horizon Estates",
+    "verdict_alias": "WATCH",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "clean now, flagged for a future window",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "4,50,000",
+        "value": 450000
+      },
+      {
+        "raw": "9,000",
+        "value": 9000
+      },
+      {
+        "raw": "₹12,00,000",
+        "value": 1200000
+      }
+    ],
+    "primary_amount": 450000,
+    "citations": [
+      "NS05",
+      "§393(1)",
+      "§194I(b))",
+      "§197)"
+    ],
+    "proof": "3aa9…7c51",
+    "text": "Horizon Estates 393(1) 4,50,000 §395 cert valid ✓ WATCH LDC 37.5% consumed; breach forecast office rent · §395 LDC @2% · NS05·LDC 9,000 @2% Cap 37.5% used ~Feb 2027. Beyond cap the rate reverts to cap ₹12,00,000 e/w 194I(b) TDS.G17 metered ✓ 10% — metered per payment, alert at 80%. §393(1)·NS05 (e/w §194I(b)) · §395 cert (e/w §197) · proof: 3aa9…7c51"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v7",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Annapurna Caterers",
+    "party": "Annapurna Caterers",
+    "verdict_alias": "WATCH",
+    "verdict_class": "HOLD",
+    "verdict_color": "amber",
+    "verdict_meaning": "clean now, flagged for a future window",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "1,00,000",
+        "value": 100000
+      },
+      {
+        "raw": "2,000",
+        "value": 2000
+      },
+      {
+        "raw": "₹1,00,000",
+        "value": 100000
+      }
+    ],
+    "primary_amount": 100000,
+    "citations": [
+      "NS01",
+      "§43B(h))",
+      "§15"
+    ],
+    "proof": "9d02…4b6e",
+    "text": "Annapurna Caterers 393(1) 1,00,000 TDS in order ✓ WATCH Deduction clean; flag is ageing — 61 days canteen services · Udyam-micro NS01 2,000 @2% MSMED §15 ✗ 61d unpaid past the MSMED §15 window. Pay · 61 days unpaid e/w 194C before 31 Mar 2027 or ₹1,00,000 of expense is disallowed u/s 37 (e/w 43B(h)). Watch routed to accounts. §37 (e/w §43B(h)) · MSMED §15 · proof: 9d02…4b6e"
+  },
+  {
+    "verdict_id": "TDS-2627-Q1-0031#v8",
+    "report_id": "TDS-2627-Q1-0031",
+    "module": "TDS",
+    "item": "Zenith Fabricators",
+    "party": "Zenith Fabricators",
+    "verdict_alias": "RECOVER",
+    "verdict_class": "REVERSE",
+    "verdict_color": "red-outline",
+    "verdict_meaning": "recover from counterparty",
+    "ca_review": false,
+    "amounts": [
+      {
+        "raw": "18,000",
+        "value": 18000
+      }
+    ],
+    "primary_amount": 18000,
+    "citations": [
+      "NS12",
+      "R.37BA)"
+    ],
+    "proof": "e410…9cd7",
+    "text": "Zenith Fabricators 393(1) 18,000 Books ✓ AIS ✓ RECOVER Their 194Q-equivalent TDS on your sales customer · receivable-side NS12 mirror credit Own 26AS ✗ 04 Jul sits in books/AIS but not your 26AS/Form mirror e/w 194Q TDS.G18 fired ✓ 168 past their due date — their default, your cash; credit at ITR risk (2026 Rules, e/w R.37BA). Recovery letter drafted. IT Rules 2026 credit rules (e/w R.37BA) · §205 bar (e/w) · TDS.G18 · proof: e410…9cd7"
+  }
+]
