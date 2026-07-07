@@ -141,6 +141,20 @@ class TestCostOptimisations(unittest.TestCase):
             [{"role": "user", "content": "how should I handle Pinnacle?"}])
         self.assertEqual(cc.calls, 1)
 
+    def test_substantive_with_trivial_keyword_not_fastpathed(self):
+        # regression: a single word like 'deadline' must NOT short-circuit a
+        # substantive, entity-named, multi-part question to the deterministic path
+        cc = MockChatClient(script=[ChatTurn(content="synthesis")])
+        ChatAgent(det(), chat_client=cc).chat([{"role": "user", "content":
+            "How should I handle Pinnacle Advisory? Give the reversal amount and deadline."}])
+        self.assertEqual(cc.calls, 1)      # reached the model, not fast-pathed
+
+    def test_vendor_question_not_fastpathed(self):
+        cc = MockChatClient(script=[ChatTurn(content="synthesis")])
+        ChatAgent(det(), chat_client=cc).chat(
+            [{"role": "user", "content": "what is the verdict on Orbit Packaging?"}])
+        self.assertEqual(cc.calls, 1)
+
     def test_history_is_windowed(self):
         cc = MockChatClient(script=[ChatTurn(content="ok")])
         ca = ChatAgent(det(), chat_client=cc, max_history=4, fast_path=False)

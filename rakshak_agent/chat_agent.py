@@ -20,8 +20,18 @@ import json
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
+import re
+
 from . import clock as _clock
 from .tools import ToolKit, tool_specs
+
+# Explicit elaboration/synthesis requests — send these to the reasoning model
+# even if they classify as a structured intent (the caller wants the model, not
+# a terse deterministic read-out). Note: clean advisories (prioritise / windows /
+# notice position) are NOT blocked — they are $0 in /ask, so $0 here too.
+_FASTPATH_BLOCK = re.compile(
+    r"\b(explain|why\b|how (does|do i|should)|compare|walk me through|draft|"
+    r"summari|strateg|recommend|what do you think)\b")
 
 
 @dataclass
@@ -168,15 +178,26 @@ class ChatAgent:
             fb.fell_back = True
             return fb
 
-    # trivial deterministic intents that never need the model
-    _FAST_INTENTS = {"identity", "count", "list"}
+    # deterministic intents that never need the model (also $0 in /ask)
+    _FAST_INTENTS = {"identity", "count", "list", "advice"}
 
     def _fast_path(self, user_msgs) -> Optional[ChatResponse]:
+        """Only genuinely trivial, standalone lookups skip the model. Anything
+        that names a vendor, asks 'how/why/should', is multi-part, or is long is
+        left to the reasoning agent — a single trivial keyword (e.g. 'deadline')
+        must NOT short-circuit a substantive question."""
         if not self.fast_path:
             return None
         from .engine import is_anaphoric
         last = user_msgs[-1]["content"]
-        if is_anaphoric(last):        # a follow-up needs conversational context
+        low = last.lower()
+        if is_anaphoric(last):                       # follow-up needs context
+            return None
+        if len(last.split()) > 10:                   # long -> likely substantive
+            return None
+        if _FASTPATH_BLOCK.search(low):              # reasoning/advisory cue
+            return None
+        if self.toolkit.index.find_entity(last):     # vendor question -> agent
             return None
         det = self.agent.ask(last)
         if (det.in_scope and det.intent in self._FAST_INTENTS
