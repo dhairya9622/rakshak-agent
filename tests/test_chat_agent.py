@@ -126,6 +126,32 @@ class TestChatLoop(unittest.TestCase):
         self.assertEqual(r.tool_iterations, 2)
 
 
+class TestCostOptimisations(unittest.TestCase):
+    def test_trivial_lookup_skips_the_model(self):
+        cc = MockChatClient(script=[ChatTurn(content="should not be called")])
+        r = ChatAgent(det(), chat_client=cc, clock=Clock(TODAY)).chat(
+            [{"role": "user", "content": "what is the GSTIN?"}])
+        self.assertEqual(cc.calls, 0)              # model never invoked
+        self.assertEqual(r.cost_usd, 0.0)
+        self.assertIn("27XXXXX1234X1Z5", r.text)
+
+    def test_substantive_question_still_uses_model(self):
+        cc = MockChatClient(script=[ChatTurn(content="synthesis")])
+        ChatAgent(det(), chat_client=cc).chat(
+            [{"role": "user", "content": "how should I handle Pinnacle?"}])
+        self.assertEqual(cc.calls, 1)
+
+    def test_history_is_windowed(self):
+        cc = MockChatClient(script=[ChatTurn(content="ok")])
+        ca = ChatAgent(det(), chat_client=cc, max_history=4, fast_path=False)
+        long_convo = [{"role": "user", "content": "q%d" % i} if i % 2 == 0
+                      else {"role": "assistant", "content": "a%d" % i} for i in range(20)]
+        ca.chat(long_convo)
+        # system + at most `max_history` messages, and it starts user-first
+        self.assertLessEqual(len(cc.seen_messages), 1 + 4)
+        self.assertEqual(cc.seen_messages[1]["role"], "user")
+
+
 class TestFallback(unittest.TestCase):
     def test_offline_no_client_uses_deterministic(self):
         r = ChatAgent(det(), chat_client=None).chat(
@@ -138,10 +164,11 @@ class TestFallback(unittest.TestCase):
         class Boom(MockChatClient):
             def _chat(self, m, t):
                 raise RuntimeError("network")
+        # a substantive question (not a fast-path lookup) so it reaches the model
         r = ChatAgent(det(), chat_client=Boom()).chat(
-            [{"role": "user", "content": "What is the TAN?"}])
+            [{"role": "user", "content": "how should I handle Pinnacle Advisory?"}])
         self.assertTrue(r.fell_back)
-        self.assertIn("MUMXXXX21F", r.text)
+        self.assertIn("REVERSE", r.text)
 
     def test_empty_conversation(self):
         r = ChatAgent(det(), chat_client=MockChatClient(script=[])).chat([])

@@ -101,17 +101,17 @@ class ToolKit:
             "report_id": v["report_id"], "verdict": v.get("verdict_alias"),
             "class": v.get("verdict_class"), "ca_review": v.get("ca_review"),
             "amounts": [x["raw"] for x in v.get("amounts", [])],
-            "citations": v.get("citations", []), "proof": v.get("proof"),
+            "citations": v.get("citations", [])[:4], "proof": v.get("proof"),
             "reason": self.agent._verdict_reason(v)} for v in rows]}
 
     def _t_find_verdict(self, a):
         terms = normalize.query_terms(a.get("query", ""))
-        vs = self.index.rank_verdicts(terms, [], top_k=3)
+        vs = self.index.rank_verdicts(terms, [], top_k=2)   # capped for cost
         return {"verdicts": [{
             "report_id": v["report_id"], "item": v.get("item") or v.get("party"),
             "verdict": v.get("verdict_alias"), "class": v.get("verdict_class"),
             "amounts": [x["raw"] for x in v.get("amounts", [])],
-            "citations": v.get("citations", []), "proof": v.get("proof"),
+            "citations": v.get("citations", [])[:4], "proof": v.get("proof"),
             "reason": self.agent._verdict_reason(v)} for _, v in vs]}
 
     def _t_get_identity(self, a):
@@ -127,9 +127,9 @@ class ToolKit:
 
     def _t_search_reports(self, a):
         terms = normalize.query_terms(a.get("query", ""))
-        ch = self.index.rank_chunks(terms, [], top_k=4)
+        ch = self.index.rank_chunks(terms, [], top_k=2)      # capped for cost
         return {"passages": [{"report_id": c["report_id"], "page": c["page"],
-                              "text": c["text"][:500]} for _, c in ch]}
+                              "text": c["text"][:300]} for _, c in ch]}
 
     def _t_list_vendors(self, a):
         return {"vendors": [e["name"] for e in self.kb.entities]}

@@ -45,12 +45,15 @@ class ChatResponse:
 
 class ChatAgent:
     def __init__(self, agent, chat_client=None, clock=None,
-                 max_tool_iters: int = 6):
+                 max_tool_iters: int = 4, max_history: int = 12,
+                 fast_path: bool = True):
         self.agent = agent                      # deterministic Agent (kb/index/advisor)
         self.client = chat_client               # ChatClient or None (offline)
         self.toolkit = ToolKit(agent)
         self.clock = clock or _clock.Clock()
         self.max_tool_iters = max_tool_iters
+        self.max_history = max_history          # sliding-window: keep last N messages
+        self.fast_path = fast_path              # trivial lookups answered at $0
         self._specs = tool_specs()
 
     # ------------------------------------------------------------------ #
@@ -77,8 +80,11 @@ class ChatAgent:
             "filing rest with the CA and %s.\n"
             "- If a question is outside these five reports, say so briefly; do not "
             "use outside knowledge.\n"
-            "- Be concise, precise, and cite. Indian rupee grouping (e.g. "
-            "₹1,80,000)."
+            "- Call the MINIMUM tools needed: a vendor question -> get_vendor; "
+            "'what's urgent' -> get_deadlines; the notice -> get_notice_position. "
+            "Don't call tools you don't need.\n"
+            "- Be concise: short paragraphs or one compact table, not exhaustive. "
+            "Cite report ids. Indian rupee grouping (e.g. ₹1,80,000)."
             % (entity, _clock.fmt(self.clock.today()), reps, entity))
 
     def chat(self, messages: List[Dict], context: dict = None) -> ChatResponse:
@@ -90,8 +96,19 @@ class ChatAgent:
         if self.client is None:
             return self._offline_fallback(user_msgs)
 
+        # $0 fast-path: a standalone trivial lookup (GSTIN, a date, a count/list)
+        # is answered by the deterministic engine — no model, no tokens.
+        fp = self._fast_path(user_msgs)
+        if fp is not None:
+            return fp
+
+        # Sliding window: only send the last N turns (prompt caching + this bound
+        # keep long sessions from growing unbounded). Keep the window user-first.
+        history = user_msgs[-self.max_history:]
+        while history and history[0]["role"] != "user":
+            history = history[1:]
         convo = [{"role": "system", "content": self._system_prompt()}] + [
-            {"role": m["role"], "content": m["content"]} for m in user_msgs]
+            {"role": m["role"], "content": m["content"]} for m in history]
 
         cost = t_in = t_out = 0
         tools_used: List[str] = []
@@ -150,6 +167,23 @@ class ChatAgent:
             fb.cost_usd += cost
             fb.fell_back = True
             return fb
+
+    # trivial deterministic intents that never need the model
+    _FAST_INTENTS = {"identity", "count", "list"}
+
+    def _fast_path(self, user_msgs) -> Optional[ChatResponse]:
+        if not self.fast_path:
+            return None
+        from .engine import is_anaphoric
+        last = user_msgs[-1]["content"]
+        if is_anaphoric(last):        # a follow-up needs conversational context
+            return None
+        det = self.agent.ask(last)
+        if (det.in_scope and det.intent in self._FAST_INTENTS
+                and det.confidence >= 3.0):
+            return ChatResponse(text=det.text, model=None, cost_usd=0.0,
+                                sources=det.sources, tools_used=["(deterministic)"])
+        return None
 
     def _offline_fallback(self, user_msgs) -> ChatResponse:
         """No model available: answer the latest turn with the deterministic
