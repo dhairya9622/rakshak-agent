@@ -13,7 +13,9 @@ from .engine import Agent, Answer
 from .knowledge import KnowledgeBase
 from .smart_agent import SmartAgent, SmartAnswer
 from .llm import (LLMClient, LLMResponse, MockLLMClient, ScriptedLLMClient,
-                  DeepSeekClient, ModelCascade, ABSTAIN)
+                  DeepSeekClient, ModelCascade, ABSTAIN,
+                  ChatClient, DeepSeekChatClient, MockChatClient, ChatTurn)
+from .chat_agent import ChatAgent, ChatResponse
 from .distillation import DistillationLogger
 
 # The four flagship "virtual-CA" questions for the UI's preloaded section.
@@ -35,6 +37,8 @@ __all__ = [
     "SmartAgent", "SmartAnswer",
     "LLMClient", "LLMResponse", "MockLLMClient", "ScriptedLLMClient",
     "DeepSeekClient", "ModelCascade", "ABSTAIN",
+    "ChatClient", "DeepSeekChatClient", "MockChatClient", "ChatTurn",
+    "ChatAgent", "ChatResponse",
     "DistillationLogger", "PRELOADED_QUESTIONS", "suggested_questions",
 ]
 __version__ = "2.0.0"

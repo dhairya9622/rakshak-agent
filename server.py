@@ -23,21 +23,28 @@ import json
 import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-from rakshak_agent import SmartAgent, DeepSeekClient, suggested_questions
+from rakshak_agent import (SmartAgent, ChatAgent, DeepSeekClient,
+                           DeepSeekChatClient, suggested_questions)
 
 
-def build_agent():
+def build_agents():
+    """SmartAgent (deterministic + cascade, powers /ask) and ChatAgent
+    (conversational tool-using agent, powers /chat)."""
     key = os.environ.get("DEEPSEEK_API_KEY")
-    cheap = capable = None
+    cheap = capable = chat_client = None
     if key:
         cheap = DeepSeekClient(name="deepseek-chat", tier="cheap")
         capable = DeepSeekClient(name="deepseek-reasoner", tier="capable",
                                  model="deepseek-reasoner",
                                  price_in_per_m=0.55, price_out_per_m=2.19)
-    return SmartAgent.load("knowledge", cheap_llm=cheap, capable_llm=capable)
+        chat_client = DeepSeekChatClient(name="deepseek-chat", model="deepseek-chat")
+    sa = SmartAgent.load("knowledge", cheap_llm=cheap, capable_llm=capable)
+    ca = ChatAgent(sa.agent, chat_client=chat_client)
+    return sa, ca
 
 
-AGENT = None  # set in main()
+AGENT = None   # SmartAgent — set in main()
+CHAT = None    # ChatAgent  — set in main()
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -62,33 +69,47 @@ class Handler(BaseHTTPRequestHandler):
                                            "POST /ask {question}"]})
         elif path == "/health":
             s = AGENT.kb.stats()
-            self._send(200, {"ok": True, "llm_enabled": AGENT.router.cheap is not None, **s})
+            self._send(200, {"ok": True,
+                             "llm_enabled": AGENT.router.cheap is not None,
+                             "chat_enabled": CHAT is not None and CHAT.client is not None,
+                             **s})
         elif path == "/suggested":
             self._send(200, {"questions": suggested_questions()})
         else:
             self._send(404, {"error": "not found"})
 
     def do_POST(self):
-        if self.path.rstrip("/") != "/ask":
-            return self._send(404, {"error": "not found"})
+        path = self.path.rstrip("/")
         try:
             n = int(self.headers.get("Content-Length", 0))
             data = json.loads(self.rfile.read(n) or b"{}")
-            question = (data.get("question") or "").strip()
-            context = data.get("context")  # optional: {"last_entity": "..."}
         except Exception:
             return self._send(400, {"error": "invalid JSON body"})
-        if not question:
-            return self._send(400, {"error": "question is required"})
-        ans = AGENT.ask(question, context=context if isinstance(context, dict) else None)
-        self._send(200, ans.to_dict())
+
+        if path == "/ask":
+            question = (data.get("question") or "").strip()
+            context = data.get("context")
+            if not question:
+                return self._send(400, {"error": "question is required"})
+            ans = AGENT.ask(question, context=context if isinstance(context, dict) else None)
+            return self._send(200, ans.to_dict())
+
+        if path == "/chat":
+            # conversational agent: full history [{role, content}, ...]
+            messages = data.get("messages")
+            if not isinstance(messages, list) or not messages:
+                return self._send(400, {"error": "messages array is required"})
+            reply = CHAT.chat(messages)
+            return self._send(200, reply.to_dict())
+
+        self._send(404, {"error": "not found"})
 
     def log_message(self, *a):  # quiet
         pass
 
 
 def main():
-    global AGENT
+    global AGENT, CHAT
     ap = argparse.ArgumentParser()
     # Cloud hosts (Render, HF Spaces, Cloud Run, Fly...) inject $PORT and expect
     # the process to bind 0.0.0.0. Both are overridable for local dev.
@@ -96,11 +117,13 @@ def main():
     ap.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"))
     args = ap.parse_args()
 
-    AGENT = build_agent()
+    AGENT, CHAT = build_agents()
     llm = "on (DeepSeek)" if AGENT.router.cheap else "off (offline only, $0)"
-    print("Rakshak agent API on http://%s:%d  · LLM escalation: %s"
+    print("Rakshak agent API on http://%s:%d  · LLM: %s"
           % (args.host, args.port, llm), flush=True)
-    print("  GET /  GET /health  GET /suggested  POST /ask {\"question\": \"...\"}", flush=True)
+    print("  GET /  GET /health  GET /suggested", flush=True)
+    print("  POST /ask  {question}          (deterministic, $0 for most)", flush=True)
+    print("  POST /chat {messages:[...]}    (conversational agent + tools)", flush=True)
     ThreadingHTTPServer((args.host, args.port), Handler).serve_forever()
 
 

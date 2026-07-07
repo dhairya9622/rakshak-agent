@@ -52,14 +52,14 @@ never call DeepSeek from the frontend.
 }
 ```
 
-Fetch `/suggested` on load to populate the chips; POST `/ask` per user message.
+Fetch `/suggested` on load to populate the chips.
 
-**Multi-turn:** the POST body is `{ question, context?: { last_entity } }`. Keep the
-last answer's `topic` in state and send it as `context.last_entity` on the next
-request, so a follow-up like *"advise on this"* resolves to the previous subject.
-If a follow-up can't be resolved, the agent replies with a one-line clarifier
-(intent `advice`, `data.clarify=true`) — render it as a normal assistant bubble,
-never as an error.
+**Use `POST /chat` for the conversation** (a real AI agent with memory + tools —
+it reasons across reports and cites exact figures). Keep a `messages[]` array in
+state: on send, append `{role:"user", content}`, POST `{ messages }` (the whole
+array), render `reply.text`, then append `{role:"assistant", content: reply.text}`.
+Show small footers from the response: `model`, `cost_usd`, `tools_used`, and the
+`sources` chips. (`/ask` still exists for single-shot $0 widget lookups.)
 
 ---
 

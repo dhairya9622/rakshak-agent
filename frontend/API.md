@@ -17,7 +17,8 @@ Components Pvt Ltd. Off-topic questions are refused (never call a model).
 | GET | `/` | service info |
 | GET | `/health` | readiness + KB stats |
 | GET | `/suggested` | the 4 preloaded questions |
-| POST | `/ask` | ask a question → answer |
+| POST | `/chat` | **conversational agent** (memory + tools) — use this for the chatbot |
+| POST | `/ask` | single-shot deterministic answer (widgets / $0 lookups) |
 | OPTIONS | `*` | CORS preflight → `204` |
 
 ---
@@ -44,7 +45,39 @@ curl https://rakshak-agent.onrender.com/suggested
   "What is the notice position?" ] }
 ```
 
-### POST /ask
+### POST /chat  ← the conversational agent (recommended for the chatbot)
+A tool-using AI agent with **full conversation memory**: it reasons over the
+reports and calls the deterministic engine for exact, cited figures.
+
+**Request body:** `{ "messages": [ { "role": "user"|"assistant", "content": string }, ... ] }`
+Send the **entire history** each turn (append the user's new message).
+```bash
+curl -X POST https://rakshak-agent.onrender.com/chat \
+  -H "Content-Type: application/json" \
+  -d '{"messages":[{"role":"user","content":"how should I handle Pinnacle Advisory?"}]}'
+```
+**Response (`ChatResponse`):**
+| field | type | notes |
+|---|---|---|
+| `text` | string | the assistant's reply (render as a bubble) |
+| `model` | string \| null | e.g. `"deepseek-chat"` (null if it fell back offline) |
+| `cost_usd` | number | spend for this turn |
+| `tokens_in` / `tokens_out` | number | usage |
+| `tool_iterations` | number | how many tool rounds it took |
+| `tools_used` | string[] | which grounded tools it called (e.g. `["get_vendor"]`) |
+| `sources` | `{report_id,page}[]` | provenance gathered from tool results |
+| `prompt_cache_hit` | boolean | provider prompt-cache discount applied |
+| `fell_back` | boolean | true if the model was unavailable → deterministic single-shot |
+```json
+{ "text": "Reverse ₹36,000 under Rule 37 now; R.37A watch to 30 Nov 2026 (146d). [ITC-2627-MAY-0049 p2]",
+  "model": "deepseek-chat", "cost_usd": 0.0021, "tool_iterations": 1,
+  "tools_used": ["get_vendor"], "sources": [{"report_id":"ITC-2627-MAY-0049","page":2}],
+  "fell_back": false }
+```
+Frontend loop: keep a `messages[]` array in state; on send, append `{role:"user",...}`,
+POST the whole array, then append `{role:"assistant", content: reply.text}`.
+
+### POST /ask  (single-shot deterministic; $0 for most)
 **Request body:** `{ "question": string, "context"?: { "last_entity"?: string } }`
 
 `context` is optional and enables **multi-turn follow-ups**. Echo the previous

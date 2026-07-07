@@ -167,6 +167,118 @@ class DeepSeekClient(LLMClient):
 # Cascade: cheapest first, escalate only on abstain
 # --------------------------------------------------------------------------- #
 
+@dataclass
+class ChatTurn:
+    """One assistant turn from a chat/tool-calling model."""
+    content: str = ""
+    tool_calls: list = field(default_factory=list)   # [{id, name, arguments(dict)}]
+    tokens_in: int = 0
+    tokens_out: int = 0
+    cost_usd: float = 0.0
+    model: str = ""
+    prompt_cache_hit: bool = False
+
+
+class ChatClient:
+    """Chat + tool-calling contract. Subclass and implement _chat()."""
+
+    def __init__(self, name, price_in_per_m=0.0, price_out_per_m=0.0,
+                 price_in_cached_per_m=None):
+        self.name = name
+        self.price_in = price_in_per_m
+        self.price_out = price_out_per_m
+        self.price_in_cached = (price_in_cached_per_m if price_in_cached_per_m is not None
+                                else price_in_per_m * 0.25)
+        self.calls = 0
+
+    def cost(self, t_in, t_out, cached_in=0):
+        fresh = max(0, t_in - cached_in)
+        return (fresh / 1e6) * self.price_in + (cached_in / 1e6) * self.price_in_cached \
+            + (t_out / 1e6) * self.price_out
+
+    def chat(self, messages, tools=None) -> ChatTurn:
+        self.calls += 1
+        return self._chat(messages, tools)
+
+    def _chat(self, messages, tools):  # pragma: no cover
+        raise NotImplementedError
+
+
+class DeepSeekChatClient(ChatClient):
+    """DeepSeek chat completions with tool-calling (stdlib urllib)."""
+
+    API_URL = "https://api.deepseek.com/chat/completions"
+
+    def __init__(self, name="deepseek-chat", model="deepseek-chat",
+                 api_key_env="DEEPSEEK_API_KEY", price_in_per_m=0.27,
+                 price_out_per_m=1.10, price_in_cached_per_m=0.07,
+                 timeout=60, temperature=0.0, max_tokens=700):
+        super().__init__(name, price_in_per_m, price_out_per_m, price_in_cached_per_m)
+        self.model = model
+        self.api_key_env = api_key_env
+        self.timeout = timeout
+        self.temperature = temperature
+        self.max_tokens = max_tokens
+
+    def _chat(self, messages, tools):  # pragma: no cover - network
+        import urllib.request
+        key = os.environ.get(self.api_key_env)
+        if not key:
+            raise RuntimeError("DeepSeek API key not set (%s)" % self.api_key_env)
+        payload = {"model": self.model, "temperature": self.temperature,
+                   "max_tokens": self.max_tokens, "messages": messages}
+        if tools:
+            payload["tools"] = tools
+            payload["tool_choice"] = "auto"
+        req = urllib.request.Request(
+            self.API_URL, data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json", "Authorization": "Bearer " + key})
+        data = json.loads(urllib.request.urlopen(req, timeout=self.timeout).read().decode("utf-8"))
+        msg = data["choices"][0]["message"]
+        usage = data.get("usage", {})
+        t_in = usage.get("prompt_tokens", 0)
+        t_out = usage.get("completion_tokens", 0)
+        cached = usage.get("prompt_cache_hit_tokens", 0)
+        calls = []
+        for tc in (msg.get("tool_calls") or []):
+            try:
+                a = json.loads(tc["function"].get("arguments") or "{}")
+            except Exception:
+                a = {}
+            calls.append({"id": tc["id"], "name": tc["function"]["name"], "arguments": a})
+        return ChatTurn(content=msg.get("content") or "", tool_calls=calls,
+                        tokens_in=t_in, tokens_out=t_out,
+                        cost_usd=self.cost(t_in, t_out, cached),
+                        model=self.model, prompt_cache_hit=cached > 0)
+
+
+class MockChatClient(ChatClient):
+    """Scripted chat client for tests. `script` is a list of ChatTurn (or dicts)
+    returned in order; each call pops the next. Lets tests drive a tool loop
+    deterministically."""
+
+    def __init__(self, name="mock-chat", script=None, price_in_per_m=0.27,
+                 price_out_per_m=1.10, **kw):
+        super().__init__(name, price_in_per_m, price_out_per_m, **kw)
+        self.script = list(script or [])
+        self.seen_messages = []       # captured for assertions
+        self.seen_tools = None
+
+    def _chat(self, messages, tools):
+        self.seen_messages = messages
+        self.seen_tools = tools
+        turn = self.script.pop(0) if self.script else ChatTurn(content="(no script)")
+        if isinstance(turn, dict):
+            turn = ChatTurn(**turn)
+        t_in = sum(estimate_tokens(str(m.get("content") or "")) for m in messages)
+        t_out = estimate_tokens(turn.content)
+        turn.tokens_in = turn.tokens_in or t_in
+        turn.tokens_out = turn.tokens_out or t_out
+        turn.cost_usd = self.cost(turn.tokens_in, turn.tokens_out)
+        turn.model = self.name
+        return turn
+
+
 class ModelCascade:
     """Ordered clients (cheapest -> most capable). Tries each in turn; a client
     that ABSTAINs or errors hands off to the next. Records every attempt so the
