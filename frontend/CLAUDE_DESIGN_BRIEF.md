@@ -109,6 +109,39 @@ Render as tappable chips above the input; also from `GET /suggested`:
 
 ---
 
+## 4b. Conversation state & reliability (frontend owns the memory)
+
+The API is **stateless** — `/chat` remembers nothing. The frontend keeps the
+conversation and its durability. Implement ALL of the following:
+
+- **State:** hold `messages: {role:"user"|"assistant", content:string}[]`. On send,
+  append the user msg, POST `{ messages }` (the WHOLE array), render `reply.text`,
+  then append `{role:"assistant", content: reply.text}`. Send only `user`/`assistant`
+  roles (the server adds the system prompt).
+- **Persist across refresh/reload/close:** write `messages[]` to `localStorage`
+  (key `rakshak.chat.v1`) on every change and rehydrate on load. WITHOUT this a
+  page refresh loses the conversation. Provide a **"New chat"** button that clears
+  the array + the key. (No cross-device memory — there is no backend DB/login.)
+- **Model memory is the last ~12 messages** (server sliding window). Store/display
+  the full chat, but don't expect the model to recall very old turns.
+- **Timeouts:** a `/chat` turn takes 10–30s (tool loop) and the host cold-starts
+  ~50s after idle → client timeout **≥ 60–90s** + a "thinking… (first message may
+  take ~1 min)" state.
+- **No double-submit:** disable send while a request is in flight (each call costs
+  money and re-runs the model).
+- **Retry only on failure, never on success:** on error/timeout keep the user's
+  message, do NOT append an assistant bubble, show an inline retry. A successful
+  call already spent tokens — never auto-resend it.
+- **Optimistic user bubble**, marked failed if the request errors.
+- **Handle** `{error:"..."}` (400/404) and 5xx with a friendly retry; handle
+  `reply.fell_back === true` (model unavailable → answered offline single-shot) with
+  a subtle "offline" hint.
+- **Cap** stored history (~last 50 messages) so localStorage stays small.
+- **Privacy:** this is compliance data — choose `localStorage` (persists) vs
+  `sessionStorage` (clears on tab close) deliberately, and offer a "clear" control.
+- Optional: multi-tab sync via the `storage` event; a keep-warm ping to avoid cold
+  starts.
+
 ## 5. Rendering rules (important for the "CA-grade" feel)
 - Render `text` **verbatim**; convert `\n` to line breaks. Do **not** summarise.
 - If a bubble's text has bullet lines (`•`) or labelled lines (`Verdict:`,
