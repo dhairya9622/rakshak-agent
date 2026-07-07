@@ -114,10 +114,13 @@ Render as tappable chips above the input; also from `GET /suggested`:
 The API is **stateless** — `/chat` remembers nothing. The frontend keeps the
 conversation and its durability. Implement ALL of the following:
 
-- **State:** hold `messages: {role:"user"|"assistant", content:string}[]`. On send,
-  append the user msg, POST `{ messages }` (the WHOLE array), render `reply.text`,
-  then append `{role:"assistant", content: reply.text}`. Send only `user`/`assistant`
-  roles (the server adds the system prompt).
+- **State:** hold `messages: {role:"user"|"assistant", content:string}[]` AND a
+  `session_id` (a UUID generated once when the conversation starts). On send,
+  append the user msg, POST `{ session_id, messages }` (the WHOLE array), render
+  `reply.text`, then append `{role:"assistant", content: reply.text}`. Send only
+  `user`/`assistant` roles (the server adds the system prompt). **Always include
+  `session_id`** — the server uses it to save the whole session for review. On
+  "New chat", generate a NEW `session_id`.
 - **Persist across refresh/reload/close:** write `messages[]` to `localStorage`
   (key `rakshak.chat.v1`) on every change and rehydrate on load. WITHOUT this a
   page refresh loses the conversation. Provide a **"New chat"** button that clears
