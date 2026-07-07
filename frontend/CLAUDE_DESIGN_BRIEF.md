@@ -109,6 +109,31 @@ Render as tappable chips above the input; also from `GET /suggested`:
 
 ---
 
+## 4a2. Access gate (REQUIRED — the backend enforces it)
+
+The assistant is locked behind an access code. The backend rejects `/ask`,
+`/chat` and `/suggested` with **401** unless the request carries a valid code in
+the **`X-Access-Key`** header. `/health` stays open.
+
+- Show a **passcode screen** first: the user TYPES the access code (never hard-code
+  it in the app / bundle — that would defeat the gate). Store it in
+  `sessionStorage` (`rakshak.key`).
+- Send it on EVERY request to the assistant:
+  `headers: { "Content-Type":"application/json", "X-Access-Key": accessCode }`.
+- On **401**, clear the stored code and return to the passcode screen with
+  "invalid or expired access code."
+- Do not display or log the code anywhere.
+
+```js
+const accessCode = sessionStorage.getItem("rakshak.key");
+const res = await fetch(`${API_URL}/chat`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json", "X-Access-Key": accessCode },
+  body: JSON.stringify({ session_id, messages }),
+});
+if (res.status === 401) { sessionStorage.removeItem("rakshak.key"); showPasscodeScreen(); }
+```
+
 ## 4b. Conversation state & reliability (frontend owns the memory)
 
 The API is **stateless** — `/chat` remembers nothing. The frontend keeps the

@@ -20,11 +20,24 @@ CORS is open so a locally-served frontend can call it directly.
 
 import argparse
 import datetime
+import hmac
 import json
 import os
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
+
+# Hard access gate for the assistant. Set ACCESS_KEYS (comma-separated, one per
+# user so you can revoke individually) or ACCESS_KEY (single) as a Render env
+# var. The frontend collects the code from the USER (never baked into the build)
+# and sends it as the X-Access-Key header; the backend enforces it here. If unset
+# the gate is OPEN (dev only).
+ACCESS_KEYS = set(k.strip() for k in (
+    os.environ.get("ACCESS_KEYS") or os.environ.get("ACCESS_KEY") or ""
+).split(",") if k.strip())
+
+# Optionally lock CORS to your site (e.g. https://your-site.netlify.app). "*" = any.
+ALLOWED_ORIGIN = os.environ.get("ALLOWED_ORIGIN", "*")
 
 from rakshak_agent import (SmartAgent, ChatAgent, DeepSeekClient,
                            DeepSeekChatClient, suggested_questions)
@@ -116,14 +129,26 @@ class Handler(BaseHTTPRequestHandler):
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Access-Control-Allow-Origin", ALLOWED_ORIGIN)
+        self.send_header("Access-Control-Allow-Headers",
+                         "Content-Type, X-Access-Key, Authorization, X-Log-Token")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.end_headers()
         self.wfile.write(body)
 
     def do_OPTIONS(self):
-        self._send(204, {})
+        self._send(204, {})   # CORS preflight — never gated
+
+    def _authorized(self):
+        """True if the access gate is open or the request carries a valid key.
+        Constant-time compare against each configured key."""
+        if not ACCESS_KEYS:
+            return True
+        provided = self.headers.get("X-Access-Key") or ""
+        auth = self.headers.get("Authorization") or ""
+        if not provided and auth.lower().startswith("bearer "):
+            provided = auth[7:].strip()
+        return any(hmac.compare_digest(provided, k) for k in ACCESS_KEYS)
 
     def do_GET(self):
         parsed = urlparse(self.path)
@@ -139,8 +164,11 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, {"ok": True,
                              "llm_enabled": AGENT.router.cheap is not None,
                              "chat_enabled": CHAT is not None and CHAT.client is not None,
+                             "access_gate": bool(ACCESS_KEYS),
                              **s})
         elif path == "/suggested":
+            if not self._authorized():
+                return self._send(401, {"error": "invalid or missing access key"})
             self._send(200, {"questions": suggested_questions()})
         else:
             self._send(404, {"error": "not found"})
@@ -166,6 +194,10 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(n) or b"{}")
         except Exception:
             return self._send(400, {"error": "invalid JSON body"})
+
+        # Hard access gate on the assistant endpoints.
+        if path in ("/ask", "/chat") and not self._authorized():
+            return self._send(401, {"error": "invalid or missing access key"})
 
         if path == "/ask":
             question = (data.get("question") or "").strip()
@@ -211,6 +243,8 @@ def main():
     print("Rakshak agent API on http://%s:%d  · LLM: %s"
           % (args.host, args.port, llm), flush=True)
     logs = "on (LOG_TOKEN set)" if LOG_TOKEN else "off (set LOG_TOKEN to enable)"
+    gate = ("ON — %d key(s)" % len(ACCESS_KEYS)) if ACCESS_KEYS else "OFF — OPEN (set ACCESS_KEYS)"
+    print("  Access gate: %s   ·   CORS origin: %s" % (gate, ALLOWED_ORIGIN), flush=True)
     print("  GET /  GET /health  GET /suggested", flush=True)
     print("  POST /ask  {question}                 (deterministic, $0 for most)", flush=True)
     print("  POST /chat {session_id, messages}     (conversational agent + tools)", flush=True)
